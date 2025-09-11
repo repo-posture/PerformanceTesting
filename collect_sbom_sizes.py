@@ -34,7 +34,7 @@ def main():
     # Parameters
     format_type = "cyclonedx"  # Change to "cyclonedx" if needed
     start_count = 20001
-    end_count = 20100
+    end_count = 20005
     step = 1
     
     # File to store results
