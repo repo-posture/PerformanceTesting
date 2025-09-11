@@ -235,52 +235,88 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
     for i in tqdm(range(component_count), desc="Generating CycloneDX components", disable=(component_count < 500)):
         comp_info = get_random_component(ECOSYSTEMS, existing_components, complexity_level)
         
+        # Extract group from name for maven packages
+        group = None
+        name = comp_info["name"]
+        if comp_info["ecosystem"] == "maven" and ":" in name:
+            group, name = name.split(":")
+        
+        # Generate a package-id
+        package_id = hashlib.md5(f"{comp_info['name']}:{comp_info['version']}".encode()).hexdigest()[:16]
+        
+        # Create proper purl format
+        purl = comp_info["purl"]
+        
+        # Create bom-ref with package-id
+        bom_ref = f"{purl}?package-id={package_id}"
+        
         # Basic component properties
         comp = {
+            "bom-ref": bom_ref,
             "type": "library",
-            "bom-ref": f"pkg:{i}",
-            "name": comp_info["name"],
+            "name": name,
             "version": comp_info["version"],
-            "purl": comp_info["purl"],
-            "licenses": [{"license": {"id": random.choice(LICENSES)}}],
-            "supplier": {"name": random.choice(['Example Inc', 'Open Source Foundation', 'Tech Corp', 'Community Project'])},
-            "hashes": [{"alg": "SHA-256", "content": generate_checksum()}]
+            "purl": purl,
         }
         
-        # Add CPE for higher complexity
-        if complexity_level >= 2:
-            comp["cpe"] = comp_info["cpe"]
-            comp["description"] = f"This is a synthetic {comp_info['ecosystem']} package for {comp_info['name']}."
-            comp["publisher"] = f"Publisher of {comp_info['name']}"
+        # Add group for maven packages
+        if group:
+            comp["group"] = group
         
-        # Add properties for higher complexity
-        if complexity_level >= 3:
-            comp["properties"] = [
-                {"name": "ecosystem", "value": comp_info["ecosystem"]},
-                {"name": "synthetically-generated", "value": "true"},
-                {"name": "test-scope", "value": "performance-testing"}
-            ]
+        # Add CPE
+        comp["cpe"] = comp_info["cpe"]
         
-        # Add vulnerability data for some components
+        # Add licenses for higher complexity
         if complexity_level >= 2:
-            vuln = generate_vulnerability()
-            if vuln:
-                if "vulnerabilities" not in comp:
-                    comp["vulnerabilities"] = []
-                comp["vulnerabilities"].append({
-                    "id": vuln["id"],
-                    "description": vuln["description"],
-                    "source": {"name": "NVD"},
-                    "ratings": [
-                        {
-                            "source": {"name": "NVD"},
-                            "method": "CVSSv3",
-                            "score": vuln["cvssScore"],
-                            "severity": vuln["severity"]
-                        }
-                    ],
-                    "references": [{"url": ref} for ref in vuln["references"]]
-                })
+            comp["licenses"] = [{
+                "license": {"id": random.choice(LICENSES)}
+            }]
+        
+        # Add external references
+        comp["externalReferences"] = [
+            {
+                "url": "",
+                "hashes": [
+                    {
+                        "alg": "SHA-1",
+                        "content": generate_checksum()
+                    }
+                ],
+                "type": "build-meta"
+            }
+        ]
+        
+        # Add properties
+        comp["properties"] = [
+            {
+                "name": "syft:package:foundBy",
+                "value": f"{comp_info['ecosystem']}-cataloger"
+            },
+            {
+                "name": "syft:package:language",
+                "value": comp_info['ecosystem'] if comp_info['ecosystem'] != 'maven' else 'java'
+            },
+            {
+                "name": "syft:package:type",
+                "value": comp_info['ecosystem']
+            },
+            {
+                "name": "syft:package:metadataType",
+                "value": comp_info['ecosystem']
+            }
+        ]
+        
+        # Add CPE properties
+        comp["properties"].append({
+            "name": "syft:cpe23",
+            "value": comp_info["cpe"]
+        })
+        
+        # Add path property
+        comp["properties"].append({
+            "name": "syft:location:0:path",
+            "value": f"/packages/{comp_info['ecosystem']}/{comp_info['name']}/{comp_info['version']}"
+        })
         
         components.append(comp)
     
@@ -293,32 +329,41 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
                 deps = []
                 for _ in range(dependency_count):
                     dependent_idx = random.randint(0, i-1)
-                    deps.append({"ref": f"pkg:{dependent_idx}"})
+                    deps.append({"ref": components[dependent_idx]["bom-ref"]})
                 
                 if deps:
                     dependencies.append({
-                        "ref": f"pkg:{i}",
+                        "ref": components[i]["bom-ref"],
                         "dependsOn": [d["ref"] for d in deps]
                     })
     
     # Create the SBOM
+    document_uuid = uuid.uuid4()
+    
+    # Generate root component reference
+    root_component_ref = hashlib.md5(b"root-component").hexdigest()[:16]
+    
     sbom = {
+        "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
         "bomFormat": "CycloneDX",
-        "specVersion": "1.4",
-        "serialNumber": f"urn:uuid:{uuid.uuid4()}",
+        "specVersion": "1.6",
+        "serialNumber": f"urn:uuid:{document_uuid}",
         "version": 1,
         "metadata": {
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "tools": [
-                {
-                    "vendor": "Performance Testing",
-                    "name": "SBOM-Generator",
-                    "version": "2.0.0"
-                }
-            ],
+            "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "tools": {
+                "components": [
+                    {
+                        "type": "application",
+                        "author": "Performance Testing Team",
+                        "name": "SBOM-Generator",
+                        "version": "2.0.0"
+                    }
+                ]
+            },
             "component": {
+                "bom-ref": root_component_ref,
                 "type": "application",
-                "bom-ref": "synthetic-app",
                 "name": "Synthetic Application",
                 "version": "1.0.0"
             }
