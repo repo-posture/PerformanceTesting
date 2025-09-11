@@ -535,12 +535,12 @@ if __name__ == "__main__":
     try:
         if args.format == 'spdx':
             sbom = generate_spdx_sbom(args.count, args.complexity)
-            filename = f'synthetic_spdx_{args.count}_c{args.complexity}_{timestamp}.{output_format}'
+            filename = f'synthetic_spdx_{args.count}_c{args.complexity}.{output_format}'
             filepath = save_sbom(sbom, filename, output_format)
             print(f"Generated SPDX SBOM with {args.count} components (complexity level {args.complexity}): {filepath}")
         else:
             sbom = generate_cyclonedx_sbom(args.count, args.complexity)
-            filename = f'synthetic_cyclonedx_{args.count}_c{args.complexity}_{timestamp}.{output_format}'
+            filename = f'synthetic_cyclonedx_{args.count}_c{args.complexity}.{output_format}'
             filepath = save_sbom(sbom, filename, output_format)
             print(f"Generated CycloneDX SBOM with {args.count} components (complexity level {args.complexity}): {filepath}")
     except Exception as e:

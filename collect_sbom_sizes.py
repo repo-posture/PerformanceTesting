@@ -33,9 +33,9 @@ def run_sbom_generator(format_type, component_count):
 def main():
     # Parameters
     format_type = "cyclonedx"  # Change to "cyclonedx" if needed
-    start_count = 1000
-    end_count = 50000
-    step = 1000
+    start_count = 20001
+    end_count = 20100
+    step = 1
     
     # File to store results
     csv_filename = f"sbom_file_sizes_{format_type}.csv"
