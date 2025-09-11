@@ -231,6 +231,18 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
     existing_components = []
     dependencies = []
     
+    # Common supplier information
+    supplier_info = {
+        "name": "Synthetic Component Supplier",
+        "url": ["https://example.com/supplier"],
+        "contact": [
+            {
+                "name": "Support",
+                "email": "support@example.com"
+            }
+        ]
+    }
+    
     # First pass: create all components
     for i in tqdm(range(component_count), desc="Generating CycloneDX components", disable=(component_count < 500)):
         comp_info = get_random_component(ECOSYSTEMS, existing_components, complexity_level)
@@ -250,6 +262,18 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
         # Create bom-ref with package-id
         bom_ref = f"{purl}?package-id={package_id}"
         
+        # Generate supplier info for component
+        component_supplier = {
+            "name": f"{name} Maintainers",
+            "url": [f"https://{comp_info['ecosystem']}.example.org/{name}"],
+            "contact": [
+                {
+                    "name": "Maintainer",
+                    "email": f"maintainers+{name}@example.com"
+                }
+            ]
+        }
+        
         # Basic component properties
         comp = {
             "bom-ref": bom_ref,
@@ -257,6 +281,7 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
             "name": name,
             "version": comp_info["version"],
             "purl": purl,
+            "supplier": component_supplier  # Add supplier to component
         }
         
         # Add group for maven packages
@@ -275,14 +300,18 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
         # Add external references
         comp["externalReferences"] = [
             {
-                "url": "",
+                "url": f"https://{comp_info['ecosystem']}.example.org/{name}",
                 "hashes": [
                     {
                         "alg": "SHA-1",
                         "content": generate_checksum()
                     }
                 ],
-                "type": "build-meta"
+                "type": "website"
+            },
+            {
+                "url": f"https://{comp_info['ecosystem']}.example.org/{name}/issues",
+                "type": "issue-tracker"
             }
         ]
         
@@ -303,20 +332,16 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
             {
                 "name": "syft:package:metadataType",
                 "value": comp_info['ecosystem']
+            },
+            {
+                "name": "syft:cpe23",
+                "value": comp_info["cpe"]
+            },
+            {
+                "name": "syft:location:0:path",
+                "value": f"/packages/{comp_info['ecosystem']}/{comp_info['name']}/{comp_info['version']}"
             }
         ]
-        
-        # Add CPE properties
-        comp["properties"].append({
-            "name": "syft:cpe23",
-            "value": comp_info["cpe"]
-        })
-        
-        # Add path property
-        comp["properties"].append({
-            "name": "syft:location:0:path",
-            "value": f"/packages/{comp_info['ecosystem']}/{comp_info['name']}/{comp_info['version']}"
-        })
         
         components.append(comp)
     
@@ -355,9 +380,19 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
                 "components": [
                     {
                         "type": "application",
-                        "author": "Performance Testing Team",
                         "name": "SBOM-Generator",
-                        "version": "2.0.0"
+                        "version": "2.0.0",
+                        "publisher": "Performance Testing Team",
+                        "supplier": {
+                            "name": "Performance Testing Team",
+                            "url": ["https://example.com"],
+                            "contact": [
+                                {
+                                    "name": "Support",
+                                    "email": "support@example.com"
+                                }
+                            ]
+                        }
                     }
                 ]
             },
@@ -365,8 +400,11 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
                 "bom-ref": root_component_ref,
                 "type": "application",
                 "name": "Synthetic Application",
-                "version": "1.0.0"
-            }
+                "version": "1.0.0",
+                "supplier": supplier_info  # Add supplier to root component
+            },
+            "manufacture": supplier_info,  # Add manufacture info
+            "supplier": supplier_info      # Add supplier to metadata
         },
         "components": components
     }
