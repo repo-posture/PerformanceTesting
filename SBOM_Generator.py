@@ -2,17 +2,19 @@ import json
 import subprocess
 import hashlib
 import argparse
-from packageurl import PackageURL
 from cyclonedx.model.bom import Bom
 from cyclonedx.model.component import Component, ComponentType
+from cyclonedx.model.tool import Tool
 from cyclonedx.factory.license import LicenseFactory
 from cyclonedx.output import make_outputter
 from cyclonedx.schema import OutputFormat, SchemaVersion
+
 
 def get_installed_packages():
     result = subprocess.run(['pip', 'list', '--format', 'json'], capture_output=True, text=True)
     installed = json.loads(result.stdout)
     return {pkg['name'].lower(): pkg['version'] for pkg in installed}
+
 
 def get_package_license_and_path(package_name):
     result = subprocess.run(['pip', 'show', package_name], capture_output=True, text=True)
@@ -24,8 +26,8 @@ def get_package_license_and_path(package_name):
             data['location'] = line.split('Location:')[1].strip()
     return data
 
+
 def compute_package_hash(package_location, package_name):
-    # Very basic hashing: hash the top-level __init__.py file (if exists)
     try:
         import os
         pkg_path = f"{package_location}/{package_name.replace('-', '_')}/__init__.py"
@@ -35,9 +37,11 @@ def compute_package_hash(package_location, package_name):
     except Exception:
         return None
 
+
 def load_component_config(config_file):
     with open(config_file, 'r') as f:
         return json.load(f)
+
 
 def generate_sbom(component_configs, installed_packages):
     components = []
@@ -86,11 +90,15 @@ def generate_sbom(component_configs, installed_packages):
 
         components.append(component)
 
+    # Create BOM with metadata and tools
     bom = Bom()
+    bom.metadata.tool = Tool(name='Custom Python SBOM Generator', version='1.0.0')
+
     for component in components:
         bom.components.add(component)
-    
+
     return bom
+
 
 def write_sbom(bom, output_file, output_format):
     format_enum = OutputFormat.JSON if output_format == 'cyclonedx' else OutputFormat.JSON_SPDX_2_3
@@ -100,6 +108,7 @@ def write_sbom(bom, output_file, output_format):
     with open(output_file, 'w') as f:
         f.write(sbom_str)
     print(f"\n✅ SBOM written to {output_file}")
+
 
 def main():
     parser = argparse.ArgumentParser(description='SBOM Generator')
@@ -118,6 +127,7 @@ def main():
     bom = generate_sbom(component_configs, installed_packages)
 
     write_sbom(bom, args.output, args.format)
+
 
 if __name__ == '__main__':
     main()
