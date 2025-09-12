@@ -92,8 +92,47 @@ def generate_sbom(component_configs, installed_packages):
 
     # Create BOM with metadata and tools
     bom = Bom()
-    bom.metadata.tool = Tool(name='Custom Python SBOM Generator', version='1.0.0')
-
+    
+    # Debug: Let's see what methods are available
+    print("Available methods on bom.metadata:")
+    print([method for method in dir(bom.metadata) if not method.startswith('_')])
+    print("\nType of bom.metadata.tools:", type(bom.metadata.tools))
+    print("Available methods on bom.metadata.tools:")
+    print([method for method in dir(bom.metadata.tools) if not method.startswith('_')])
+    
+    # Let's dive deeper into the tools structure
+    print("\nType of bom.metadata.tools.tools:", type(bom.metadata.tools.tools))
+    print("Available methods on bom.metadata.tools.tools:")
+    print([method for method in dir(bom.metadata.tools.tools) if not method.startswith('_')])
+    print("Current tools:", list(bom.metadata.tools.tools))
+    
+    # Set tool information in metadata
+    tool = Tool(name='Custom Python SBOM Generator', version='1.0.0')
+    
+    # Try to add tool - let's see what works
+    try:
+        # Try direct assignment to tool property
+        bom.metadata.tool = tool  
+        print("✓ Successfully set tool using bom.metadata.tool")
+    except Exception as e:
+        print(f"✗ bom.metadata.tool failed: {e}")
+    
+    # Now try adding to the tools.tools collection
+    try:
+        bom.metadata.tools.tools.add(tool)
+        print("✓ Successfully added tool using bom.metadata.tools.tools.add(tool)")
+    except Exception as e:
+        print(f"✗ bom.metadata.tools.tools.add(tool) failed: {e}")
+        
+    try:
+        # Try append if it's a list
+        bom.metadata.tools.tools.append(tool) 
+        print("✓ Successfully added tool using bom.metadata.tools.tools.append(tool)")
+    except Exception as e:
+        print(f"✗ bom.metadata.tools.tools.append(tool) failed: {e}")
+        
+    print("Final tools:", list(bom.metadata.tools.tools))
+    
     for component in components:
         bom.components.add(component)
 
