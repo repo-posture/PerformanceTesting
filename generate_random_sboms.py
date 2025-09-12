@@ -107,10 +107,10 @@ def generate_sbom(output_file, sbom_format="cyclonedx"):
         return False
 
 
-def generate_unique_filename(output_dir, sbom_format):
-    """Generate a unique filename for the SBOM based on timestamp."""
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    return os.path.join(output_dir, f"sbom_{timestamp}.{sbom_format}")
+def generate_unique_filename(output_dir, sbom_format, component_count, sequential_number):
+    """Generate a sequential filename for the SBOM in format: sbom_{format}_{count}_{sequential}."""
+    filename = f"sbom_{sbom_format}_{component_count}_{sequential_number}.json"
+    return os.path.join(output_dir, filename)
 
 
 def copy_sbom_to_output(output_file):
@@ -136,8 +136,9 @@ def main():
     
     # Generate multiple SBOMs if requested
     for i in range(args.sboms):
+        sequential_number = i + 1  # Sequential numbering starting from 1
         print(f"\n{'=' * 50}")
-        print(f"Generating SBOM {i+1}/{args.sboms}")
+        print(f"Generating SBOM {sequential_number}/{args.sboms}")
         print(f"{'=' * 50}")
         
         # Generate random components
@@ -150,15 +151,16 @@ def main():
             print("❌ Failed to generate SBOM.")
             continue
         
-        # Generate unique filename for this SBOM
-        output_file = generate_unique_filename(args.output_dir, 
-                                              "json" if args.format in ["cyclonedx", "spdx"] else args.format)
+        # Generate sequential filename for this SBOM
+        output_file = generate_unique_filename(args.output_dir, args.format, args.count, sequential_number)
         
         # Copy SBOM to output directory
         copy_sbom_to_output(output_file)
     
-    print("\n✅ Process completed successfully!")
+    print(f"\n✅ Generated {args.sboms} SBOMs successfully!")
+    print(f"📁 Check the {args.output_dir} directory for your SBOM files")
 
 
 if __name__ == "__main__":
     main()
+# python3 generate_random_sboms.py --count 1000 --sboms 100

@@ -8,13 +8,13 @@ import yaml
 import argparse
 from pathlib import Path
 
-def generate_steps(count):
+def generate_steps(count, component_count=1000, sbom_format='cyclonedx'):
     """Generate a list of SSCA Orchestration steps with sequential numbering."""
     steps = []
     for i in range(1, count + 1):
-        # Calculate the file number for this step (20000, 20001, 20002, etc.)
-        file_number = 20000 + i
-        sbom_path = f'/harness/src/sboms/synthetic_cyclonedx_{file_number}_c1.json'
+        # Use the new filename format: sbom_{format}_{component_count}_{sequential_number}.json
+        sbom_filename = f'sbom_{sbom_format}_{component_count}_{i}.json'
+        sbom_path = f'/harness/src/sboms/{sbom_filename}'
         
         step = {
             'type': 'SscaOrchestration',
@@ -29,7 +29,7 @@ def generate_steps(count):
                     'type': 'local',
                     'spec': {
                         'workspace': sbom_path,
-                        'artifact_name': 'perf-test',
+                        'artifact_name': f'perf-test-{i}',  # Unique artifact name for each step
                         'type': 'manual'
                     }
                 },
@@ -44,14 +44,16 @@ def generate_steps(count):
         steps.append(step)
     return steps
 
-def generate_pipeline(step_count):
+def generate_pipeline(step_count, component_count=1000, sbom_format='cyclonedx', 
+                     project_id='test_ssca_proj_qxSj5T2JXR', 
+                     org_id='test_ssca_org_CXdrOvrGvY'):
     """Generate the complete pipeline YAML with the specified number of steps."""
     pipeline = {
         'pipeline': {
             'name': 'Performance Testing',
             'identifier': 'Performance_Testing',
-            'projectIdentifier': 'SSCA_Sanity_Automation',
-            'orgIdentifier': 'SSCA',
+            'projectIdentifier': project_id,
+            'orgIdentifier': org_id,
             'tags': {},
             'stages': [
                 {
@@ -91,10 +93,20 @@ def generate_pipeline(step_count):
                                     },
                                     {
                                         'parallel': [
-                                            {'step': step} for step in generate_steps(step_count)
+                                            {'step': step} for step in generate_steps(step_count, component_count, sbom_format)
                                         ]
                                     }
                                 ]
+                            },
+                            'infrastructure': {
+                                'type': 'KubernetesDirect',
+                                'spec': {
+                                    'connectorRef': 'kubernetes_connector_for_at',
+                                    'namespace': 'ssca-at',
+                                    'automountServiceAccountToken': True,
+                                    'nodeSelector': {},
+                                    'os': 'Linux'
+                                }
                             }
                         }
                     }
@@ -107,8 +119,17 @@ def generate_pipeline(step_count):
 def main():
     parser = argparse.ArgumentParser(description='Generate a Harness pipeline YAML with specified number of SSCA steps')
     parser.add_argument('step_count', type=int, help='Number of SSCA Orchestration steps to generate')
+    parser.add_argument('--components', type=int, default=1000, 
+                       help='Number of components in each SBOM (default: 1000)')
+    parser.add_argument('--format', type=str, default='cyclonedx',
+                       choices=['cyclonedx', 'spdx'],
+                       help='SBOM format (default: cyclonedx)')
     parser.add_argument('--output', type=str, default='pipeline_generated.yaml', 
                        help='Output YAML file (default: pipeline_generated.yaml)')
+    parser.add_argument('--project-id', type=str, default='test_ssca_proj_qxSj5T2JXR',
+                       help='Project identifier (default: test_ssca_proj_qxSj5T2JXR)')
+    parser.add_argument('--org-id', type=str, default='test_ssca_org_CXdrOvrGvY',
+                       help='Organization identifier (default: test_ssca_org_CXdrOvrGvY)')
     
     args = parser.parse_args()
     
@@ -116,7 +137,8 @@ def main():
         print("Error: step_count must be a positive integer")
         return 1
     
-    pipeline = generate_pipeline(args.step_count)
+    pipeline = generate_pipeline(args.step_count, args.components, args.format, 
+                               args.project_id, args.org_id)
     
     # Ensure output directory exists
     output_path = Path(args.output)
@@ -124,10 +146,16 @@ def main():
     
     # Write the YAML file
     with open(output_path, 'w') as f:
-        yaml.dump(pipeline, f, default_flow_style=False, sort_keys=False)
+        yaml.dump(pipeline, f, default_flow_style=False, sort_keys=False, width=1000)
     
-    print(f"Successfully generated pipeline with {args.step_count} SSCA Orchestration steps in {output_path}")
+    print(f"Successfully generated pipeline with {args.step_count} SSCA Orchestration steps")
+    print(f"  - SBOM format: {args.format}")
+    print(f"  - Components per SBOM: {args.components}")
+    print(f"  - Project ID: {args.project_id}")
+    print(f"  - Organization ID: {args.org_id}")
+    print(f"  - Output file: {output_path}")
     return 0
 
 if __name__ == "__main__":
     exit(main())
+# python3 generate_pipeline_with_parallel_sbom_orchestration.py 100 --output pipeline_100_sboms_runtime.yaml
