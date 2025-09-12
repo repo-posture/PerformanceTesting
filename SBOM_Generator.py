@@ -254,25 +254,13 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
             group, name = name.split(":")
         
         # Generate a package-id
-        package_id = hashlib.md5(f"{comp_info['name']}:{comp_info['version']}".encode()).hexdigest()[:16]
+        package_id = f"pkg:{comp_info['ecosystem']}/{name}@{comp_info['version']}"
         
         # Create proper purl format
         purl = comp_info["purl"]
         
         # Create bom-ref with package-id
-        bom_ref = f"{purl}?package-id={package_id}"
-        
-        # Generate supplier info for component
-        component_supplier = {
-            "name": f"{name} Maintainers",
-            "url": [f"https://{comp_info['ecosystem']}.example.org/{name}"],
-            "contact": [
-                {
-                    "name": "Maintainer",
-                    "email": f"maintainers+{name}@example.com"
-                }
-            ]
-        }
+        bom_ref = f"pkg:{purl}"
         
         # Basic component properties
         comp = {
@@ -281,37 +269,40 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
             "name": name,
             "version": comp_info["version"],
             "purl": purl,
-            "supplier": component_supplier  # Add supplier to component
+            "author": f"{name} Maintainers",
+            "externalReferences": [
+                {
+                    "url": f"https://{comp_info['ecosystem']}.example.org/{name}",
+                    "type": "website"
+                },
+                {
+                    "url": f"https://{comp_info['ecosystem']}.example.org/{name}/issues",
+                    "type": "issue-tracker"
+                }
+            ]
         }
         
         # Add group for maven packages
         if group:
             comp["group"] = group
         
-        # Add CPE
-        comp["cpe"] = comp_info["cpe"]
+        # Add CPE if available
+        if "cpe" in comp_info and comp_info["cpe"]:
+            comp["cpe"] = comp_info["cpe"]
         
         # Add licenses for higher complexity
         if complexity_level >= 2:
-            comp["licenses"] = [{
-                "license": {"id": random.choice(LICENSES)}
-            }]
+            comp["licenses"] = [{"license": {"id": random.choice(LICENSES)}}]
         
-        # Add external references
-        comp["externalReferences"] = [
+        # Add hashes
+        comp["hashes"] = [
             {
-                "url": f"https://{comp_info['ecosystem']}.example.org/{name}",
-                "hashes": [
-                    {
-                        "alg": "SHA-1",
-                        "content": generate_checksum()
-                    }
-                ],
-                "type": "website"
+                "alg": "SHA-1",
+                "content": generate_checksum()
             },
             {
-                "url": f"https://{comp_info['ecosystem']}.example.org/{name}/issues",
-                "type": "issue-tracker"
+                "alg": "SHA-256",
+                "content": generate_checksum()
             }
         ]
         
@@ -328,18 +319,6 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
             {
                 "name": "syft:package:type",
                 "value": comp_info['ecosystem']
-            },
-            {
-                "name": "syft:package:metadataType",
-                "value": comp_info['ecosystem']
-            },
-            {
-                "name": "syft:cpe23",
-                "value": comp_info["cpe"]
-            },
-            {
-                "name": "syft:location:0:path",
-                "value": f"/packages/{comp_info['ecosystem']}/{comp_info['name']}/{comp_info['version']}"
             }
         ]
         
@@ -366,7 +345,7 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
     document_uuid = uuid.uuid4()
     
     # Generate root component reference
-    root_component_ref = hashlib.md5(b"root-component").hexdigest()[:16]
+    root_component_ref = "urn:cdx:" + str(uuid.uuid4())
     
     sbom = {
         "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
@@ -376,35 +355,21 @@ def generate_cyclonedx_sbom(component_count, complexity_level=1):
         "version": 1,
         "metadata": {
             "timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "tools": {
-                "components": [
-                    {
-                        "type": "application",
-                        "name": "SBOM-Generator",
-                        "version": "2.0.0",
-                        "publisher": "Performance Testing Team",
-                        "supplier": {
-                            "name": "Performance Testing Team",
-                            "url": ["https://example.com"],
-                            "contact": [
-                                {
-                                    "name": "Support",
-                                    "email": "support@example.com"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
+            "tools": [
+                {
+                    "vendor": "SBOM-Generator",
+                    "name": "SBOM-Generator",
+                    "version": "2.0.0"
+                }
+            ],
             "component": {
                 "bom-ref": root_component_ref,
                 "type": "application",
                 "name": "Synthetic Application",
                 "version": "1.0.0",
+                "purl": "pkg:generic/synthetic-application@1.0.0",
                 "supplier": supplier_info  # Add supplier to root component
-            },
-            "manufacture": supplier_info,  # Add manufacture info
-            "supplier": supplier_info      # Add supplier to metadata
+            }
         },
         "components": components
     }
@@ -434,15 +399,18 @@ def save_sbom(sbom, filename, format_type="json"):
     return filepath
 
 def cyclonedx_json_to_xml(sbom_json):
-    """Convert CycloneDX JSON to XML format (simplified)"""
+    """Convert CycloneDX JSON to XML format"""
     # Create document with proper XML declaration
     impl = xml.dom.minidom.getDOMImplementation()
-    doc = impl.createDocument("http://cyclonedx.org/schema/bom/1.4", "bom", None)
+    doc = impl.createDocument("http://cyclonedx.org/schema/bom/1.6", "bom", None)
     root = doc.documentElement
     
     # Set attributes on root element
-    root.setAttribute("xmlns", "http://cyclonedx.org/schema/bom/1.4")
+    root.setAttribute("xmlns", "http://cyclonedx.org/schema/bom/1.6")
     root.setAttribute("version", "1")
+    root.setAttribute("xmlns:xs", "http://www.w3.org/2001/XMLSchema-instance")
+    root.setAttribute("xs:schemaLocation", 
+                     "http://cyclonedx.org/schema/bom/1.6 http://cyclonedx.org/schema/bom/1.6")
     
     # Add serial number if it exists
     if "serialNumber" in sbom_json:
@@ -457,11 +425,6 @@ def cyclonedx_json_to_xml(sbom_json):
             timestamp_elem = doc.createElement("timestamp")
             timestamp_elem.appendChild(doc.createTextNode(sbom_json["metadata"]["timestamp"]))
             metadata_elem.appendChild(timestamp_elem)
-        else:
-            # Add current timestamp if not provided
-            timestamp_elem = doc.createElement("timestamp")
-            timestamp_elem.appendChild(doc.createTextNode(datetime.now(timezone.utc).isoformat()))
-            metadata_elem.appendChild(timestamp_elem)
         
         # Add tools
         if "tools" in sbom_json["metadata"]:
@@ -470,10 +433,19 @@ def cyclonedx_json_to_xml(sbom_json):
                 tool_elem = doc.createElement("tool")
                 
                 for key, value in tool.items():
-                    elem = doc.createElement(key)
-                    elem.appendChild(doc.createTextNode(str(value)))
-                    tool_elem.appendChild(elem)
-                    
+                    if key == "vendor":
+                        vendor_elem = doc.createElement("vendor")
+                        vendor_elem.appendChild(doc.createTextNode(str(value)))
+                        tool_elem.appendChild(vendor_elem)
+                    elif key == "name":
+                        name_elem = doc.createElement("name")
+                        name_elem.appendChild(doc.createTextNode(str(value)))
+                        tool_elem.appendChild(name_elem)
+                    elif key == "version":
+                        version_elem = doc.createElement("version")
+                        version_elem.appendChild(doc.createTextNode(str(value)))
+                        tool_elem.appendChild(version_elem)
+                
                 tools_elem.appendChild(tool_elem)
             metadata_elem.appendChild(tools_elem)
         
@@ -482,7 +454,7 @@ def cyclonedx_json_to_xml(sbom_json):
             comp_elem = create_component_element(doc, sbom_json["metadata"]["component"])
             if comp_elem:
                 metadata_elem.appendChild(comp_elem)
-                
+        
         root.appendChild(metadata_elem)
     
     # Add components
@@ -539,11 +511,27 @@ def create_component_element(doc, component):
             return None
     
     # Add simple text elements
-    for key in ["name", "version", "description", "purl", "cpe"]:
+    for key in ["name", "version", "description", "purl", "cpe", "group", "author"]:
         if key in component and component[key]:
             elem = doc.createElement(key)
             elem.appendChild(doc.createTextNode(str(component[key])))
             comp_elem.appendChild(elem)
+    
+    # Add hashes
+    if "hashes" in component and component["hashes"]:
+        hashes_elem = doc.createElement("hashes")
+        
+        for hash_obj in component["hashes"]:
+            if not isinstance(hash_obj, dict) or "alg" not in hash_obj or "content" not in hash_obj:
+                continue
+                
+            hash_elem = doc.createElement("hash")
+            hash_elem.setAttribute("alg", hash_obj["alg"])
+            hash_elem.appendChild(doc.createTextNode(hash_obj["content"]))
+            hashes_elem.appendChild(hash_elem)
+            
+        if hashes_elem.hasChildNodes():
+            comp_elem.appendChild(hashes_elem)
     
     # Add licenses
     if "licenses" in component and component["licenses"]:
@@ -569,21 +557,41 @@ def create_component_element(doc, component):
         if licenses_elem.hasChildNodes():
             comp_elem.appendChild(licenses_elem)
     
-    # Add hashes
-    if "hashes" in component and component["hashes"]:
-        hashes_elem = doc.createElement("hashes")
+    # Add external references
+    if "externalReferences" in component and component["externalReferences"]:
+        ext_refs_elem = doc.createElement("externalReferences")
         
-        for hash_obj in component["hashes"]:
-            if not isinstance(hash_obj, dict) or "alg" not in hash_obj or "content" not in hash_obj:
+        for ref in component["externalReferences"]:
+            if not isinstance(ref, dict) or "url" not in ref or "type" not in ref:
                 continue
                 
-            hash_elem = doc.createElement("hash")
-            hash_elem.setAttribute("alg", hash_obj["alg"])
-            hash_elem.appendChild(doc.createTextNode(hash_obj["content"]))
-            hashes_elem.appendChild(hash_elem)
+            ref_elem = doc.createElement("reference")
+            ref_elem.setAttribute("type", ref["type"])
             
-        if hashes_elem.hasChildNodes():
-            comp_elem.appendChild(hashes_elem)
+            url_elem = doc.createElement("url")
+            url_elem.appendChild(doc.createTextNode(ref["url"]))
+            ref_elem.appendChild(url_elem)
+            
+            ext_refs_elem.appendChild(ref_elem)
+            
+        if ext_refs_elem.hasChildNodes():
+            comp_elem.appendChild(ext_refs_elem)
+    
+    # Add properties
+    if "properties" in component and component["properties"]:
+        props_elem = doc.createElement("properties")
+        
+        for prop in component["properties"]:
+            if not isinstance(prop, dict) or "name" not in prop or "value" not in prop:
+                continue
+                
+            prop_elem = doc.createElement("property")
+            prop_elem.setAttribute("name", prop["name"])
+            prop_elem.setAttribute("value", str(prop["value"]))
+            props_elem.appendChild(prop_elem)
+            
+        if props_elem.hasChildNodes():
+            comp_elem.appendChild(props_elem)
     
     return comp_elem
 
