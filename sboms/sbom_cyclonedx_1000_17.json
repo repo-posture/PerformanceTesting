@@ -1,0 +1,5282 @@
+{
+  "components": [
+    {
+      "bom-ref": "BomRef.109138206716349.594898214138695",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "PyYAML",
+      "type": "library",
+      "version": "6.0.2"
+    },
+    {
+      "bom-ref": "BomRef.17063980449934812.029471759506536577",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "boolean.py",
+      "type": "library",
+      "version": "5.0"
+    },
+    {
+      "bom-ref": "BomRef.9940939404285906.9042702035818289",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD 3-Clause License"
+          }
+        }
+      ],
+      "name": "contourpy",
+      "type": "library",
+      "version": "1.3.3"
+    },
+    {
+      "bom-ref": "BomRef.34647877692673934.5086084047869266",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-1",
+      "type": "library",
+      "version": "2.9.6"
+    },
+    {
+      "bom-ref": "BomRef.8004868954748592.8114569395955517",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-10",
+      "type": "library",
+      "version": "0.1.9"
+    },
+    {
+      "bom-ref": "BomRef.3621046985765698.24302207419687516",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-100",
+      "type": "library",
+      "version": "4.2.0"
+    },
+    {
+      "bom-ref": "BomRef.19796990547403748.9585162594910213",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-101",
+      "type": "library",
+      "version": "5.4.8"
+    },
+    {
+      "bom-ref": "BomRef.11230581866063027.1679216455564435",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-102",
+      "type": "library",
+      "version": "2.3.8"
+    },
+    {
+      "bom-ref": "BomRef.17589928287291712.1459451953997013",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-103",
+      "type": "library",
+      "version": "4.7.9"
+    },
+    {
+      "bom-ref": "BomRef.8088537843386503.8885630121117623",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-104",
+      "type": "library",
+      "version": "4.0.0"
+    },
+    {
+      "bom-ref": "BomRef.7057439409277582.3727842958212797",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-105",
+      "type": "library",
+      "version": "5.4.9"
+    },
+    {
+      "bom-ref": "BomRef.9557896961099617.06373213413514356",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-106",
+      "type": "library",
+      "version": "0.6.8"
+    },
+    {
+      "bom-ref": "BomRef.5472522601196166.15779622518619518",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-107",
+      "type": "library",
+      "version": "0.4.3"
+    },
+    {
+      "bom-ref": "BomRef.7707062084591266.9809095691232783",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-108",
+      "type": "library",
+      "version": "4.4.0"
+    },
+    {
+      "bom-ref": "BomRef.25451221672155444.6503078280327574",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-109",
+      "type": "library",
+      "version": "0.2.2"
+    },
+    {
+      "bom-ref": "BomRef.3830713217279613.4283608973974605",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-11",
+      "type": "library",
+      "version": "5.4.2"
+    },
+    {
+      "bom-ref": "BomRef.061909366005945765.013293931494546163",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-110",
+      "type": "library",
+      "version": "0.3.1"
+    },
+    {
+      "bom-ref": "BomRef.8537427610086435.4193559778893613",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-111",
+      "type": "library",
+      "version": "3.2.8"
+    },
+    {
+      "bom-ref": "BomRef.8235598806739833.041640499172799106",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-112",
+      "type": "library",
+      "version": "2.0.4"
+    },
+    {
+      "bom-ref": "BomRef.4000762747527642.3931626350101963",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-113",
+      "type": "library",
+      "version": "5.9.9"
+    },
+    {
+      "bom-ref": "BomRef.19024544606351446.337882595037602",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-114",
+      "type": "library",
+      "version": "5.8.5"
+    },
+    {
+      "bom-ref": "BomRef.1095565877007223.013125593113320844",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-115",
+      "type": "library",
+      "version": "5.4.8"
+    },
+    {
+      "bom-ref": "BomRef.7347686265911828.36641607543250954",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-116",
+      "type": "library",
+      "version": "4.8.9"
+    },
+    {
+      "bom-ref": "BomRef.352987316271516.010967966215027e-05",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-117",
+      "type": "library",
+      "version": "3.7.0"
+    },
+    {
+      "bom-ref": "BomRef.5511131335444404.42511476695590555",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-118",
+      "type": "library",
+      "version": "4.8.9"
+    },
+    {
+      "bom-ref": "BomRef.1038928957162174.4123636606847887",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-119",
+      "type": "library",
+      "version": "4.8.6"
+    },
+    {
+      "bom-ref": "BomRef.38501871152525324.9268646311813341",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-12",
+      "type": "library",
+      "version": "0.6.4"
+    },
+    {
+      "bom-ref": "BomRef.5334191934730654.14704185367589906",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-120",
+      "type": "library",
+      "version": "4.3.4"
+    },
+    {
+      "bom-ref": "BomRef.017816721777230482.001386664221154299",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-121",
+      "type": "library",
+      "version": "1.2.1"
+    },
+    {
+      "bom-ref": "BomRef.4412551215634699.058563486033062384",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-122",
+      "type": "library",
+      "version": "0.9.6"
+    },
+    {
+      "bom-ref": "BomRef.36207648087321187.3159107788782096",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-123",
+      "type": "library",
+      "version": "5.6.8"
+    },
+    {
+      "bom-ref": "BomRef.3618333088439405.9967195037468748",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-124",
+      "type": "library",
+      "version": "0.2.6"
+    },
+    {
+      "bom-ref": "BomRef.059798725693160804.3863727577621129",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-125",
+      "type": "library",
+      "version": "3.7.4"
+    },
+    {
+      "bom-ref": "BomRef.28424884683304763.6030529056342233",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-126",
+      "type": "library",
+      "version": "3.9.1"
+    },
+    {
+      "bom-ref": "BomRef.8896437024000664.24083369631056073",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-127",
+      "type": "library",
+      "version": "0.3.4"
+    },
+    {
+      "bom-ref": "BomRef.23621400171910545.5013526679088827",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-128",
+      "type": "library",
+      "version": "2.5.3"
+    },
+    {
+      "bom-ref": "BomRef.1650185045880147.5957907736698913",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-129",
+      "type": "library",
+      "version": "2.7.8"
+    },
+    {
+      "bom-ref": "BomRef.10891895246194616.23100932137934294",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-13",
+      "type": "library",
+      "version": "3.0.0"
+    },
+    {
+      "bom-ref": "BomRef.1864432225151973.9111641356093134",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-130",
+      "type": "library",
+      "version": "3.4.4"
+    },
+    {
+      "bom-ref": "BomRef.8474976640440596.4462200873541218",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-131",
+      "type": "library",
+      "version": "4.7.8"
+    },
+    {
+      "bom-ref": "BomRef.20027915748084313.8922309944415182",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-132",
+      "type": "library",
+      "version": "2.8.0"
+    },
+    {
+      "bom-ref": "BomRef.0807915424521769.5524171168679926",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-133",
+      "type": "library",
+      "version": "1.0.5"
+    },
+    {
+      "bom-ref": "BomRef.9902626668813355.766098496716324",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-134",
+      "type": "library",
+      "version": "0.1.9"
+    },
+    {
+      "bom-ref": "BomRef.323346542349932.5018407530297677",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-135",
+      "type": "library",
+      "version": "2.5.5"
+    },
+    {
+      "bom-ref": "BomRef.5013648392192949.09288187532132552",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-136",
+      "type": "library",
+      "version": "1.5.1"
+    },
+    {
+      "bom-ref": "BomRef.6989208394423201.13625037918530225",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-137",
+      "type": "library",
+      "version": "5.1.7"
+    },
+    {
+      "bom-ref": "BomRef.42645421332382594.2605447834604263",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-138",
+      "type": "library",
+      "version": "0.4.2"
+    },
+    {
+      "bom-ref": "BomRef.22387556869654568.07848590995223714",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-139",
+      "type": "library",
+      "version": "5.5.7"
+    },
+    {
+      "bom-ref": "BomRef.014904768013837777.12153430889349837",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-14",
+      "type": "library",
+      "version": "2.9.4"
+    },
+    {
+      "bom-ref": "BomRef.1684415138209009.4523149482866252",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-140",
+      "type": "library",
+      "version": "1.3.1"
+    },
+    {
+      "bom-ref": "BomRef.9618961129217641.6299219491341845",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-141",
+      "type": "library",
+      "version": "2.7.0"
+    },
+    {
+      "bom-ref": "BomRef.019728390712053345.025012249207599146",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-142",
+      "type": "library",
+      "version": "1.8.7"
+    },
+    {
+      "bom-ref": "BomRef.7865510060008462.5127160993985578",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-143",
+      "type": "library",
+      "version": "2.2.0"
+    },
+    {
+      "bom-ref": "BomRef.9010750614841638.43983386967388594",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-144",
+      "type": "library",
+      "version": "3.8.4"
+    },
+    {
+      "bom-ref": "BomRef.6819748478102595.2687231534926201",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-145",
+      "type": "library",
+      "version": "5.6.9"
+    },
+    {
+      "bom-ref": "BomRef.8637372764682687.9719213945000357",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-146",
+      "type": "library",
+      "version": "2.2.8"
+    },
+    {
+      "bom-ref": "BomRef.6679008127677379.23749087750823505",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-147",
+      "type": "library",
+      "version": "5.5.8"
+    },
+    {
+      "bom-ref": "BomRef.659334493786906.84103417967218",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-148",
+      "type": "library",
+      "version": "1.2.0"
+    },
+    {
+      "bom-ref": "BomRef.6781699291422495.4087122054555413",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-149",
+      "type": "library",
+      "version": "3.9.4"
+    },
+    {
+      "bom-ref": "BomRef.6913139810605108.19243712305519178",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-15",
+      "type": "library",
+      "version": "3.5.6"
+    },
+    {
+      "bom-ref": "BomRef.5534789259420847.7537197814197746",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-150",
+      "type": "library",
+      "version": "1.2.4"
+    },
+    {
+      "bom-ref": "BomRef.6718156541460868.8426934436617705",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-151",
+      "type": "library",
+      "version": "4.6.1"
+    },
+    {
+      "bom-ref": "BomRef.8675547306893502.07687479340759595",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-152",
+      "type": "library",
+      "version": "5.9.4"
+    },
+    {
+      "bom-ref": "BomRef.5472696048307437.9063957163144214",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-153",
+      "type": "library",
+      "version": "2.1.6"
+    },
+    {
+      "bom-ref": "BomRef.3541276187925937.5644166823931629",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-154",
+      "type": "library",
+      "version": "0.1.6"
+    },
+    {
+      "bom-ref": "BomRef.39726997062618974.8376810066406225",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-155",
+      "type": "library",
+      "version": "4.7.0"
+    },
+    {
+      "bom-ref": "BomRef.9005667757546743.6996481385315985",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-156",
+      "type": "library",
+      "version": "4.2.5"
+    },
+    {
+      "bom-ref": "BomRef.6586090504158659.8948727175743107",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-157",
+      "type": "library",
+      "version": "2.0.2"
+    },
+    {
+      "bom-ref": "BomRef.018952082538120973.5758452913129539",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-158",
+      "type": "library",
+      "version": "0.0.6"
+    },
+    {
+      "bom-ref": "BomRef.12539452819532393.3723486277340241",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-159",
+      "type": "library",
+      "version": "3.3.7"
+    },
+    {
+      "bom-ref": "BomRef.5122877950378029.4397013802361379",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-16",
+      "type": "library",
+      "version": "0.8.9"
+    },
+    {
+      "bom-ref": "BomRef.7148547036324495.780416571959232",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-160",
+      "type": "library",
+      "version": "2.9.8"
+    },
+    {
+      "bom-ref": "BomRef.685416396405191.2556731776239075",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-161",
+      "type": "library",
+      "version": "5.8.4"
+    },
+    {
+      "bom-ref": "BomRef.19910548138656836.48406854765282203",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-162",
+      "type": "library",
+      "version": "0.7.3"
+    },
+    {
+      "bom-ref": "BomRef.3331566254495246.21216628829099005",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-163",
+      "type": "library",
+      "version": "0.8.0"
+    },
+    {
+      "bom-ref": "BomRef.7823790550393345.3025569012079179",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-164",
+      "type": "library",
+      "version": "5.8.3"
+    },
+    {
+      "bom-ref": "BomRef.0333006243988222.35283894484797895",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-165",
+      "type": "library",
+      "version": "0.7.6"
+    },
+    {
+      "bom-ref": "BomRef.3096368022313938.6108878288400469",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-166",
+      "type": "library",
+      "version": "4.2.1"
+    },
+    {
+      "bom-ref": "BomRef.3948547901136422.2743772534037373",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-167",
+      "type": "library",
+      "version": "5.1.4"
+    },
+    {
+      "bom-ref": "BomRef.9507303931400916.20573562296424286",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-168",
+      "type": "library",
+      "version": "3.4.0"
+    },
+    {
+      "bom-ref": "BomRef.40284014512909316.031228348871759848",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-169",
+      "type": "library",
+      "version": "5.6.7"
+    },
+    {
+      "bom-ref": "BomRef.2283253870488915.3122741379306009",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-17",
+      "type": "library",
+      "version": "4.9.0"
+    },
+    {
+      "bom-ref": "BomRef.6822399219320768.0008863924188242667",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-170",
+      "type": "library",
+      "version": "0.2.3"
+    },
+    {
+      "bom-ref": "BomRef.8366792158607788.3303118806582682",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-171",
+      "type": "library",
+      "version": "1.2.3"
+    },
+    {
+      "bom-ref": "BomRef.09674849769907956.3594174278976292",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-172",
+      "type": "library",
+      "version": "4.0.2"
+    },
+    {
+      "bom-ref": "BomRef.11570222221606541.4751249494075932",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-173",
+      "type": "library",
+      "version": "3.8.4"
+    },
+    {
+      "bom-ref": "BomRef.793267585233402.6481669851168507",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-174",
+      "type": "library",
+      "version": "3.4.4"
+    },
+    {
+      "bom-ref": "BomRef.2611389364682869.07105154272574943",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-175",
+      "type": "library",
+      "version": "5.1.8"
+    },
+    {
+      "bom-ref": "BomRef.1370719637011838.5227501920552903",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-176",
+      "type": "library",
+      "version": "4.1.6"
+    },
+    {
+      "bom-ref": "BomRef.888483809776848.8831758967579832",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-177",
+      "type": "library",
+      "version": "1.9.3"
+    },
+    {
+      "bom-ref": "BomRef.9627130150841327.876658748517622",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-178",
+      "type": "library",
+      "version": "0.0.1"
+    },
+    {
+      "bom-ref": "BomRef.915510604119654.1185857077991449",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-179",
+      "type": "library",
+      "version": "3.8.2"
+    },
+    {
+      "bom-ref": "BomRef.932468778916657.46479076824425547",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-18",
+      "type": "library",
+      "version": "5.3.7"
+    },
+    {
+      "bom-ref": "BomRef.2020348371240922.754676505652799",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-180",
+      "type": "library",
+      "version": "3.7.8"
+    },
+    {
+      "bom-ref": "BomRef.813337571041831.6977323909760138",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-181",
+      "type": "library",
+      "version": "4.7.3"
+    },
+    {
+      "bom-ref": "BomRef.7197175840481828.4007243454415931",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-182",
+      "type": "library",
+      "version": "2.1.4"
+    },
+    {
+      "bom-ref": "BomRef.6382996522231809.4860764678266306",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-183",
+      "type": "library",
+      "version": "2.6.5"
+    },
+    {
+      "bom-ref": "BomRef.28697639644488193.9014015415760429",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-184",
+      "type": "library",
+      "version": "2.3.3"
+    },
+    {
+      "bom-ref": "BomRef.9051106708781017.8913028476905038",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-185",
+      "type": "library",
+      "version": "1.0.4"
+    },
+    {
+      "bom-ref": "BomRef.04930614256853694.46831136631073167",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-186",
+      "type": "library",
+      "version": "5.8.4"
+    },
+    {
+      "bom-ref": "BomRef.5461288328981022.9504049186358812",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-187",
+      "type": "library",
+      "version": "3.7.0"
+    },
+    {
+      "bom-ref": "BomRef.21143086708924352.6891539109635475",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-188",
+      "type": "library",
+      "version": "2.9.6"
+    },
+    {
+      "bom-ref": "BomRef.2963682421126851.7572257983817879",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-189",
+      "type": "library",
+      "version": "0.3.9"
+    },
+    {
+      "bom-ref": "BomRef.26141604513582306.13821861913275313",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-19",
+      "type": "library",
+      "version": "5.8.7"
+    },
+    {
+      "bom-ref": "BomRef.7430637686507544.2574406250888801",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-190",
+      "type": "library",
+      "version": "0.5.3"
+    },
+    {
+      "bom-ref": "BomRef.6521465071102358.9266804901021797",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-191",
+      "type": "library",
+      "version": "4.5.9"
+    },
+    {
+      "bom-ref": "BomRef.9965291228206999.3727015042849853",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-192",
+      "type": "library",
+      "version": "4.5.2"
+    },
+    {
+      "bom-ref": "BomRef.3857044981453067.6184568476284672",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-193",
+      "type": "library",
+      "version": "3.5.9"
+    },
+    {
+      "bom-ref": "BomRef.9792331427627583.7259364541745763",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-194",
+      "type": "library",
+      "version": "1.1.1"
+    },
+    {
+      "bom-ref": "BomRef.6306666668556685.5832982586202912",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-195",
+      "type": "library",
+      "version": "5.0.2"
+    },
+    {
+      "bom-ref": "BomRef.5941295658843798.3219895198102958",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-196",
+      "type": "library",
+      "version": "2.7.0"
+    },
+    {
+      "bom-ref": "BomRef.2584731820212872.3365996124880509",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-197",
+      "type": "library",
+      "version": "2.5.1"
+    },
+    {
+      "bom-ref": "BomRef.707209210901202.36757429733553326",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-198",
+      "type": "library",
+      "version": "5.6.5"
+    },
+    {
+      "bom-ref": "BomRef.3979255441104057.19468330412252877",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-199",
+      "type": "library",
+      "version": "2.7.8"
+    },
+    {
+      "bom-ref": "BomRef.08286100190476953.6668109711993302",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-2",
+      "type": "library",
+      "version": "4.7.2"
+    },
+    {
+      "bom-ref": "BomRef.10227530282603614.9050598022825421",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-20",
+      "type": "library",
+      "version": "3.7.8"
+    },
+    {
+      "bom-ref": "BomRef.9660405939191055.004276551804854867",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-200",
+      "type": "library",
+      "version": "0.8.1"
+    },
+    {
+      "bom-ref": "BomRef.9802988869958463.3747969943335534",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-201",
+      "type": "library",
+      "version": "1.4.3"
+    },
+    {
+      "bom-ref": "BomRef.9704097733440012.9674559246357619",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-202",
+      "type": "library",
+      "version": "2.3.3"
+    },
+    {
+      "bom-ref": "BomRef.8392096444132563.9410746197114659",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-203",
+      "type": "library",
+      "version": "3.8.2"
+    },
+    {
+      "bom-ref": "BomRef.46680520405807113.9037528752690867",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-204",
+      "type": "library",
+      "version": "1.1.9"
+    },
+    {
+      "bom-ref": "BomRef.7322295427168728.90484569761014",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-205",
+      "type": "library",
+      "version": "3.9.5"
+    },
+    {
+      "bom-ref": "BomRef.383903112969711.34866242217568133",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-206",
+      "type": "library",
+      "version": "4.4.6"
+    },
+    {
+      "bom-ref": "BomRef.8360147932391996.24205806263664575",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-207",
+      "type": "library",
+      "version": "2.2.4"
+    },
+    {
+      "bom-ref": "BomRef.10546109968335393.1336104920075003",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-208",
+      "type": "library",
+      "version": "2.3.6"
+    },
+    {
+      "bom-ref": "BomRef.7190196795511504.04911938486063505",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-209",
+      "type": "library",
+      "version": "3.8.6"
+    },
+    {
+      "bom-ref": "BomRef.2656718302963079.980578471725327",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-21",
+      "type": "library",
+      "version": "4.7.0"
+    },
+    {
+      "bom-ref": "BomRef.3068923112105152.775870683430987",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-210",
+      "type": "library",
+      "version": "4.1.1"
+    },
+    {
+      "bom-ref": "BomRef.040836395211077514.027322487923245542",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-211",
+      "type": "library",
+      "version": "5.3.6"
+    },
+    {
+      "bom-ref": "BomRef.6883653096341927.9862370253603894",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-212",
+      "type": "library",
+      "version": "1.0.0"
+    },
+    {
+      "bom-ref": "BomRef.5992962262791449.9922000326995264",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-213",
+      "type": "library",
+      "version": "0.2.2"
+    },
+    {
+      "bom-ref": "BomRef.9841990622702258.18054543068365747",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-214",
+      "type": "library",
+      "version": "4.4.3"
+    },
+    {
+      "bom-ref": "BomRef.2526101721050774.06861022444416254",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-215",
+      "type": "library",
+      "version": "5.0.2"
+    },
+    {
+      "bom-ref": "BomRef.7246618101718889.022691714953804176",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-216",
+      "type": "library",
+      "version": "5.4.9"
+    },
+    {
+      "bom-ref": "BomRef.12119160014689834.8561565673209471",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-217",
+      "type": "library",
+      "version": "5.8.0"
+    },
+    {
+      "bom-ref": "BomRef.6792566132877186.6085749842160855",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-218",
+      "type": "library",
+      "version": "2.3.9"
+    },
+    {
+      "bom-ref": "BomRef.5783132745059798.7295294242214521",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-219",
+      "type": "library",
+      "version": "2.6.3"
+    },
+    {
+      "bom-ref": "BomRef.3624807503360382.6433865807481509",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-22",
+      "type": "library",
+      "version": "0.9.6"
+    },
+    {
+      "bom-ref": "BomRef.6513636833329289.2651728133021931",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-220",
+      "type": "library",
+      "version": "4.2.7"
+    },
+    {
+      "bom-ref": "BomRef.7795209157639219.9526092714823783",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-221",
+      "type": "library",
+      "version": "3.2.0"
+    },
+    {
+      "bom-ref": "BomRef.9729005240228984.5567104596053045",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-222",
+      "type": "library",
+      "version": "0.0.8"
+    },
+    {
+      "bom-ref": "BomRef.9450969914350675.43646803409173496",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-223",
+      "type": "library",
+      "version": "2.0.7"
+    },
+    {
+      "bom-ref": "BomRef.4441000165871579.6782762942090729",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-224",
+      "type": "library",
+      "version": "1.5.9"
+    },
+    {
+      "bom-ref": "BomRef.36524895881328745.8267158092584898",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-225",
+      "type": "library",
+      "version": "4.8.7"
+    },
+    {
+      "bom-ref": "BomRef.9627380165140629.7169323851904085",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-226",
+      "type": "library",
+      "version": "2.0.3"
+    },
+    {
+      "bom-ref": "BomRef.19326610922268683.24830024314225452",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-227",
+      "type": "library",
+      "version": "4.6.2"
+    },
+    {
+      "bom-ref": "BomRef.7590006237443614.5831326683362917",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-228",
+      "type": "library",
+      "version": "2.8.6"
+    },
+    {
+      "bom-ref": "BomRef.17953771575765454.46666358286104226",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-229",
+      "type": "library",
+      "version": "2.8.1"
+    },
+    {
+      "bom-ref": "BomRef.3109723173780735.6494515372696255",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-23",
+      "type": "library",
+      "version": "1.9.8"
+    },
+    {
+      "bom-ref": "BomRef.831394900287582.10326355553369126",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-230",
+      "type": "library",
+      "version": "1.8.9"
+    },
+    {
+      "bom-ref": "BomRef.6402415327002442.047006665303023",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-231",
+      "type": "library",
+      "version": "1.0.3"
+    },
+    {
+      "bom-ref": "BomRef.12027590208613659.3331415480639365",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-232",
+      "type": "library",
+      "version": "2.3.8"
+    },
+    {
+      "bom-ref": "BomRef.8116798825090138.08708039225247122",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-233",
+      "type": "library",
+      "version": "5.9.6"
+    },
+    {
+      "bom-ref": "BomRef.05439966573366073.6652209904368849",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-234",
+      "type": "library",
+      "version": "1.6.7"
+    },
+    {
+      "bom-ref": "BomRef.8127945996813293.3344068279481144",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-235",
+      "type": "library",
+      "version": "4.6.9"
+    },
+    {
+      "bom-ref": "BomRef.9758499570168735.9145878589876273",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-236",
+      "type": "library",
+      "version": "2.9.1"
+    },
+    {
+      "bom-ref": "BomRef.1527914708464685.19166533552396747",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-237",
+      "type": "library",
+      "version": "5.4.5"
+    },
+    {
+      "bom-ref": "BomRef.0958479655008222.015919490708218076",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-238",
+      "type": "library",
+      "version": "0.5.1"
+    },
+    {
+      "bom-ref": "BomRef.15767297626064591.2665219742766387",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-239",
+      "type": "library",
+      "version": "3.0.0"
+    },
+    {
+      "bom-ref": "BomRef.6617148093427252.33180708697201566",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-24",
+      "type": "library",
+      "version": "2.7.2"
+    },
+    {
+      "bom-ref": "BomRef.07617576385973457.7522550281120555",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-240",
+      "type": "library",
+      "version": "0.9.7"
+    },
+    {
+      "bom-ref": "BomRef.20056765233436957.3566020122362491",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-241",
+      "type": "library",
+      "version": "3.6.3"
+    },
+    {
+      "bom-ref": "BomRef.6490048671145172.5506750950304182",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-242",
+      "type": "library",
+      "version": "0.3.9"
+    },
+    {
+      "bom-ref": "BomRef.9906325277172915.24705455713707203",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-243",
+      "type": "library",
+      "version": "3.4.2"
+    },
+    {
+      "bom-ref": "BomRef.08149283399856966.4773498792039653",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-244",
+      "type": "library",
+      "version": "1.3.5"
+    },
+    {
+      "bom-ref": "BomRef.8047951670460024.05091755431149003",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-245",
+      "type": "library",
+      "version": "2.6.2"
+    },
+    {
+      "bom-ref": "BomRef.6958173656550833.056383628178310885",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-246",
+      "type": "library",
+      "version": "0.1.8"
+    },
+    {
+      "bom-ref": "BomRef.34028124441149254.921978888591978",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-247",
+      "type": "library",
+      "version": "3.1.9"
+    },
+    {
+      "bom-ref": "BomRef.20062739710721977.9173166196369201",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-248",
+      "type": "library",
+      "version": "4.4.7"
+    },
+    {
+      "bom-ref": "BomRef.7136250537866216.475890680831352",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-249",
+      "type": "library",
+      "version": "2.6.6"
+    },
+    {
+      "bom-ref": "BomRef.675797360607461.06296540535379969",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-25",
+      "type": "library",
+      "version": "1.9.5"
+    },
+    {
+      "bom-ref": "BomRef.4775988301018407.3471994938978855",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-250",
+      "type": "library",
+      "version": "5.9.3"
+    },
+    {
+      "bom-ref": "BomRef.3738660029534828.3185778239052175",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-251",
+      "type": "library",
+      "version": "5.6.7"
+    },
+    {
+      "bom-ref": "BomRef.8889970733034382.6734129317369936",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-252",
+      "type": "library",
+      "version": "2.6.1"
+    },
+    {
+      "bom-ref": "BomRef.7532764270745598.3506741408458658",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-253",
+      "type": "library",
+      "version": "0.3.6"
+    },
+    {
+      "bom-ref": "BomRef.7704001831640984.1757344077505455",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-254",
+      "type": "library",
+      "version": "3.9.6"
+    },
+    {
+      "bom-ref": "BomRef.7509331372096961.44028712303727413",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-255",
+      "type": "library",
+      "version": "3.9.2"
+    },
+    {
+      "bom-ref": "BomRef.6394190898770712.7691809393847194",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-256",
+      "type": "library",
+      "version": "5.9.8"
+    },
+    {
+      "bom-ref": "BomRef.44700801079811947.5844482824987571",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-257",
+      "type": "library",
+      "version": "5.9.5"
+    },
+    {
+      "bom-ref": "BomRef.2580984652402971.07006967886950966",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-258",
+      "type": "library",
+      "version": "1.5.0"
+    },
+    {
+      "bom-ref": "BomRef.9556151933517192.6770778393051482",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-259",
+      "type": "library",
+      "version": "0.9.6"
+    },
+    {
+      "bom-ref": "BomRef.6698046432378401.6435472808017434",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-26",
+      "type": "library",
+      "version": "3.4.1"
+    },
+    {
+      "bom-ref": "BomRef.9418034755649392.9844422405395428",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-260",
+      "type": "library",
+      "version": "0.8.4"
+    },
+    {
+      "bom-ref": "BomRef.4985900829518587.45891968699513364",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-261",
+      "type": "library",
+      "version": "0.8.4"
+    },
+    {
+      "bom-ref": "BomRef.12558233164202093.06707283055792579",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-262",
+      "type": "library",
+      "version": "5.4.9"
+    },
+    {
+      "bom-ref": "BomRef.43414079275625495.7223989511824013",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-263",
+      "type": "library",
+      "version": "2.9.3"
+    },
+    {
+      "bom-ref": "BomRef.2562516466835273.4878157850111029",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-264",
+      "type": "library",
+      "version": "3.7.7"
+    },
+    {
+      "bom-ref": "BomRef.48278688822564186.04087313052283925",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-265",
+      "type": "library",
+      "version": "2.4.1"
+    },
+    {
+      "bom-ref": "BomRef.41981938615888903.3152963088918188",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-266",
+      "type": "library",
+      "version": "4.7.7"
+    },
+    {
+      "bom-ref": "BomRef.06367842463138118.8868826793670082",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-267",
+      "type": "library",
+      "version": "4.2.7"
+    },
+    {
+      "bom-ref": "BomRef.520049698620698.01120291745141666",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-268",
+      "type": "library",
+      "version": "4.5.1"
+    },
+    {
+      "bom-ref": "BomRef.9833955406497499.5197915788345432",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-269",
+      "type": "library",
+      "version": "4.2.3"
+    },
+    {
+      "bom-ref": "BomRef.24403211683446235.024947996890273827",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-27",
+      "type": "library",
+      "version": "3.0.6"
+    },
+    {
+      "bom-ref": "BomRef.9871465690709398.4916884081355185",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-270",
+      "type": "library",
+      "version": "2.1.2"
+    },
+    {
+      "bom-ref": "BomRef.540471866403266.03248934065589881",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-271",
+      "type": "library",
+      "version": "1.6.1"
+    },
+    {
+      "bom-ref": "BomRef.057039805422405165.9418933830074642",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-272",
+      "type": "library",
+      "version": "2.0.0"
+    },
+    {
+      "bom-ref": "BomRef.3789389715596162.14271574744461013",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-273",
+      "type": "library",
+      "version": "5.4.6"
+    },
+    {
+      "bom-ref": "BomRef.6637907597582581.16321167470294295",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-274",
+      "type": "library",
+      "version": "4.4.7"
+    },
+    {
+      "bom-ref": "BomRef.6280140009575725.5923738567213607",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-275",
+      "type": "library",
+      "version": "1.7.0"
+    },
+    {
+      "bom-ref": "BomRef.7910435492963179.009666523966151308",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-276",
+      "type": "library",
+      "version": "4.8.7"
+    },
+    {
+      "bom-ref": "BomRef.6951654915941534.17808992229580267",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-277",
+      "type": "library",
+      "version": "3.7.1"
+    },
+    {
+      "bom-ref": "BomRef.9307956599973786.455387967753239",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-278",
+      "type": "library",
+      "version": "2.8.0"
+    },
+    {
+      "bom-ref": "BomRef.14880758379560688.8702055478759242",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-279",
+      "type": "library",
+      "version": "1.6.7"
+    },
+    {
+      "bom-ref": "BomRef.5802259850135205.1600032885007311",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-28",
+      "type": "library",
+      "version": "0.8.0"
+    },
+    {
+      "bom-ref": "BomRef.16054470482751837.8657491323591592",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-280",
+      "type": "library",
+      "version": "4.2.4"
+    },
+    {
+      "bom-ref": "BomRef.5328452681353306.7098385811021162",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-281",
+      "type": "library",
+      "version": "4.6.7"
+    },
+    {
+      "bom-ref": "BomRef.16672933615506336.4921447394227034",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-282",
+      "type": "library",
+      "version": "5.6.5"
+    },
+    {
+      "bom-ref": "BomRef.15486575188504803.37014050265022946",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-283",
+      "type": "library",
+      "version": "2.7.5"
+    },
+    {
+      "bom-ref": "BomRef.47356372648080447.4214802286700824",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-284",
+      "type": "library",
+      "version": "0.3.6"
+    },
+    {
+      "bom-ref": "BomRef.9984515063558987.6028591184634706",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-285",
+      "type": "library",
+      "version": "4.9.1"
+    },
+    {
+      "bom-ref": "BomRef.8015345611967407.33217429834769086",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-286",
+      "type": "library",
+      "version": "3.3.4"
+    },
+    {
+      "bom-ref": "BomRef.4093205183677078.7434601141568021",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-287",
+      "type": "library",
+      "version": "5.9.9"
+    },
+    {
+      "bom-ref": "BomRef.07150422951625046.1689296309407422",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-288",
+      "type": "library",
+      "version": "1.9.3"
+    },
+    {
+      "bom-ref": "BomRef.5479280183297637.7721976823420141",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-289",
+      "type": "library",
+      "version": "5.0.0"
+    },
+    {
+      "bom-ref": "BomRef.6998609936994032.34915841968129124",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-29",
+      "type": "library",
+      "version": "3.3.7"
+    },
+    {
+      "bom-ref": "BomRef.4494389679496644.9637024834622271",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-290",
+      "type": "library",
+      "version": "2.5.0"
+    },
+    {
+      "bom-ref": "BomRef.33857542120017514.14357969696012352",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-291",
+      "type": "library",
+      "version": "0.0.0"
+    },
+    {
+      "bom-ref": "BomRef.609019269875224.6383885256348744",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-292",
+      "type": "library",
+      "version": "4.8.1"
+    },
+    {
+      "bom-ref": "BomRef.8566684599194192.8341812311571921",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-293",
+      "type": "library",
+      "version": "1.6.8"
+    },
+    {
+      "bom-ref": "BomRef.2925040900006354.28299745689087286",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-294",
+      "type": "library",
+      "version": "0.8.2"
+    },
+    {
+      "bom-ref": "BomRef.6814328244743421.08830218630741993",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-295",
+      "type": "library",
+      "version": "3.1.3"
+    },
+    {
+      "bom-ref": "BomRef.3289529175505591.2672702675701015",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-296",
+      "type": "library",
+      "version": "4.8.2"
+    },
+    {
+      "bom-ref": "BomRef.6128187921383125.32928648689317563",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-297",
+      "type": "library",
+      "version": "1.2.2"
+    },
+    {
+      "bom-ref": "BomRef.6228090178937549.8455816077312497",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-298",
+      "type": "library",
+      "version": "3.0.9"
+    },
+    {
+      "bom-ref": "BomRef.25846110670164346.27997820398446804",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-299",
+      "type": "library",
+      "version": "0.9.2"
+    },
+    {
+      "bom-ref": "BomRef.7388727334276034.3293556838742977",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-3",
+      "type": "library",
+      "version": "5.3.5"
+    },
+    {
+      "bom-ref": "BomRef.6039827107981276.5837822889360857",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-30",
+      "type": "library",
+      "version": "4.5.4"
+    },
+    {
+      "bom-ref": "BomRef.5590929660131838.8384321440213364",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-300",
+      "type": "library",
+      "version": "1.9.0"
+    },
+    {
+      "bom-ref": "BomRef.6565838068893524.3382145225305587",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-31",
+      "type": "library",
+      "version": "3.6.7"
+    },
+    {
+      "bom-ref": "BomRef.8040651238425708.3981908284762342",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-32",
+      "type": "library",
+      "version": "5.8.3"
+    },
+    {
+      "bom-ref": "BomRef.4091507988177363.03165024640480718",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-33",
+      "type": "library",
+      "version": "3.2.1"
+    },
+    {
+      "bom-ref": "BomRef.47620439044620266.08765976015324761",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-34",
+      "type": "library",
+      "version": "3.4.2"
+    },
+    {
+      "bom-ref": "BomRef.9155752578008577.9206497644340782",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-35",
+      "type": "library",
+      "version": "1.6.4"
+    },
+    {
+      "bom-ref": "BomRef.9022239589648033.913261098420335",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-36",
+      "type": "library",
+      "version": "4.5.3"
+    },
+    {
+      "bom-ref": "BomRef.769421071650258.8613336018674145",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-37",
+      "type": "library",
+      "version": "3.5.1"
+    },
+    {
+      "bom-ref": "BomRef.04782741291098436.5010178539614264",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-38",
+      "type": "library",
+      "version": "3.6.1"
+    },
+    {
+      "bom-ref": "BomRef.6078016244706275.7090517553460605",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-39",
+      "type": "library",
+      "version": "3.0.2"
+    },
+    {
+      "bom-ref": "BomRef.35841008453192247.05362537110878629",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-4",
+      "type": "library",
+      "version": "2.8.7"
+    },
+    {
+      "bom-ref": "BomRef.4375701638538304.6136770909936987",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-40",
+      "type": "library",
+      "version": "3.9.4"
+    },
+    {
+      "bom-ref": "BomRef.25477953546806087.9235467133761546",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-41",
+      "type": "library",
+      "version": "0.2.1"
+    },
+    {
+      "bom-ref": "BomRef.6430548572139302.7088612889950153",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-42",
+      "type": "library",
+      "version": "1.1.8"
+    },
+    {
+      "bom-ref": "BomRef.1462387465774183.008477993993632027",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-43",
+      "type": "library",
+      "version": "0.1.8"
+    },
+    {
+      "bom-ref": "BomRef.0765576270388112.09990527975762031",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-44",
+      "type": "library",
+      "version": "5.8.3"
+    },
+    {
+      "bom-ref": "BomRef.24076625421993092.33272818853017383",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-45",
+      "type": "library",
+      "version": "3.5.6"
+    },
+    {
+      "bom-ref": "BomRef.5049860870305188.28856524036319264",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-46",
+      "type": "library",
+      "version": "5.6.3"
+    },
+    {
+      "bom-ref": "BomRef.39796097241438155.5606823346204675",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-47",
+      "type": "library",
+      "version": "4.1.3"
+    },
+    {
+      "bom-ref": "BomRef.14834386926946497.5436148085816355",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-48",
+      "type": "library",
+      "version": "2.2.8"
+    },
+    {
+      "bom-ref": "BomRef.7398514327547194.7321447871299394",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-49",
+      "type": "library",
+      "version": "3.7.3"
+    },
+    {
+      "bom-ref": "BomRef.48876563281768093.365836592599332",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-5",
+      "type": "library",
+      "version": "2.9.4"
+    },
+    {
+      "bom-ref": "BomRef.9657361625535491.7089955338916734",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-50",
+      "type": "library",
+      "version": "1.0.3"
+    },
+    {
+      "bom-ref": "BomRef.8091823337750323.9988654671862319",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-51",
+      "type": "library",
+      "version": "0.2.1"
+    },
+    {
+      "bom-ref": "BomRef.8500590454469079.7417694481395616",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-52",
+      "type": "library",
+      "version": "4.8.7"
+    },
+    {
+      "bom-ref": "BomRef.19978798185673274.42507811699836084",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-53",
+      "type": "library",
+      "version": "5.4.5"
+    },
+    {
+      "bom-ref": "BomRef.14276352071083875.34348388458906187",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-54",
+      "type": "library",
+      "version": "0.9.6"
+    },
+    {
+      "bom-ref": "BomRef.24664954019845986.46426563400675513",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-55",
+      "type": "library",
+      "version": "4.9.7"
+    },
+    {
+      "bom-ref": "BomRef.8713928316362963.5405677769757617",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-56",
+      "type": "library",
+      "version": "5.0.7"
+    },
+    {
+      "bom-ref": "BomRef.48646162738196175.08537315094992648",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-57",
+      "type": "library",
+      "version": "0.6.4"
+    },
+    {
+      "bom-ref": "BomRef.6510216280654096.7231549030753772",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-58",
+      "type": "library",
+      "version": "0.1.1"
+    },
+    {
+      "bom-ref": "BomRef.8517186240422518.05077394749409425",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-59",
+      "type": "library",
+      "version": "0.3.0"
+    },
+    {
+      "bom-ref": "BomRef.703388813001509.5448042470784314",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-6",
+      "type": "library",
+      "version": "3.6.0"
+    },
+    {
+      "bom-ref": "BomRef.04741698886552603.05334091347689052",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-60",
+      "type": "library",
+      "version": "5.1.5"
+    },
+    {
+      "bom-ref": "BomRef.07290927316017226.49958388547153165",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-61",
+      "type": "library",
+      "version": "1.8.6"
+    },
+    {
+      "bom-ref": "BomRef.8486296671344887.4794734400649796",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-62",
+      "type": "library",
+      "version": "2.0.3"
+    },
+    {
+      "bom-ref": "BomRef.16745877032031997.30712540989515125",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-63",
+      "type": "library",
+      "version": "1.0.3"
+    },
+    {
+      "bom-ref": "BomRef.7725159052180374.628934409154102",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-64",
+      "type": "library",
+      "version": "2.5.7"
+    },
+    {
+      "bom-ref": "BomRef.4794801831195423.019519864447955282",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-65",
+      "type": "library",
+      "version": "4.6.9"
+    },
+    {
+      "bom-ref": "BomRef.5997957821747055.9129694357264837",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-66",
+      "type": "library",
+      "version": "0.4.4"
+    },
+    {
+      "bom-ref": "BomRef.5104276361070619.6931703438610634",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-67",
+      "type": "library",
+      "version": "1.8.4"
+    },
+    {
+      "bom-ref": "BomRef.9448748985885441.9513184436757909",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-68",
+      "type": "library",
+      "version": "2.5.1"
+    },
+    {
+      "bom-ref": "BomRef.702109236416503.06017389637855142",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-69",
+      "type": "library",
+      "version": "4.0.9"
+    },
+    {
+      "bom-ref": "BomRef.889285646472575.1989555769936998",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-7",
+      "type": "library",
+      "version": "3.6.5"
+    },
+    {
+      "bom-ref": "BomRef.6044535580306842.9693749343693371",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-70",
+      "type": "library",
+      "version": "4.7.1"
+    },
+    {
+      "bom-ref": "BomRef.5589819102106103.6700607728371831",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-71",
+      "type": "library",
+      "version": "0.9.6"
+    },
+    {
+      "bom-ref": "BomRef.34487194254761.7777037928142239",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-72",
+      "type": "library",
+      "version": "2.4.6"
+    },
+    {
+      "bom-ref": "BomRef.6819893139913815.4001166956161887",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-73",
+      "type": "library",
+      "version": "1.8.3"
+    },
+    {
+      "bom-ref": "BomRef.6139680659303142.8477850184657666",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-74",
+      "type": "library",
+      "version": "3.7.2"
+    },
+    {
+      "bom-ref": "BomRef.17316901813882946.8072102848380345",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-75",
+      "type": "library",
+      "version": "0.8.0"
+    },
+    {
+      "bom-ref": "BomRef.7391088660421024.5560813869803429",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-76",
+      "type": "library",
+      "version": "4.4.2"
+    },
+    {
+      "bom-ref": "BomRef.8046698684422339.5187897451739447",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-77",
+      "type": "library",
+      "version": "5.3.4"
+    },
+    {
+      "bom-ref": "BomRef.6820204481730892.4459984786477289",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-78",
+      "type": "library",
+      "version": "4.0.0"
+    },
+    {
+      "bom-ref": "BomRef.9940134494998083.6581288534076355",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-79",
+      "type": "library",
+      "version": "2.9.6"
+    },
+    {
+      "bom-ref": "BomRef.15259310755271493.5131611064655681",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-8",
+      "type": "library",
+      "version": "1.8.8"
+    },
+    {
+      "bom-ref": "BomRef.9616735216768708.8800191412476861",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-80",
+      "type": "library",
+      "version": "5.2.0"
+    },
+    {
+      "bom-ref": "BomRef.40118331137730145.6391791087500086",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-81",
+      "type": "library",
+      "version": "3.0.1"
+    },
+    {
+      "bom-ref": "BomRef.5223661597294584.16133408691437823",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-82",
+      "type": "library",
+      "version": "5.0.6"
+    },
+    {
+      "bom-ref": "BomRef.5797347601853533.6350658494183508",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-83",
+      "type": "library",
+      "version": "0.0.5"
+    },
+    {
+      "bom-ref": "BomRef.5156931819476257.2111546323030845",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-84",
+      "type": "library",
+      "version": "2.5.0"
+    },
+    {
+      "bom-ref": "BomRef.43781980557901656.10070202829041097",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-85",
+      "type": "library",
+      "version": "3.7.7"
+    },
+    {
+      "bom-ref": "BomRef.7075757990904801.9165487781387819",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1"
+          }
+        }
+      ],
+      "name": "custom-library-86",
+      "type": "library",
+      "version": "5.1.3"
+    },
+    {
+      "bom-ref": "BomRef.49291327175650157.9568386951282529",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-87",
+      "type": "library",
+      "version": "4.1.6"
+    },
+    {
+      "bom-ref": "BomRef.607616542935115.8096787879214448",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "custom-library-88",
+      "type": "library",
+      "version": "2.9.4"
+    },
+    {
+      "bom-ref": "BomRef.9187592933541182.6503801203733599",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-89",
+      "type": "library",
+      "version": "3.9.7"
+    },
+    {
+      "bom-ref": "BomRef.805186395495254.2723542003717695",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-9",
+      "type": "library",
+      "version": "4.5.2"
+    },
+    {
+      "bom-ref": "BomRef.6193143789720253.36332157049353664",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-90",
+      "type": "library",
+      "version": "4.4.9"
+    },
+    {
+      "bom-ref": "BomRef.11118037231333644.14610307148521617",
+      "licenses": [
+        {
+          "license": {
+            "id": "AGPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-91",
+      "type": "library",
+      "version": "4.0.2"
+    },
+    {
+      "bom-ref": "BomRef.8010073538451298.664990111979387",
+      "licenses": [
+        {
+          "license": {
+            "id": "Unlicense"
+          }
+        }
+      ],
+      "name": "custom-library-92",
+      "type": "library",
+      "version": "0.3.0"
+    },
+    {
+      "bom-ref": "BomRef.5673006578890586.9932143994176331",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-93",
+      "type": "library",
+      "version": "0.3.3"
+    },
+    {
+      "bom-ref": "BomRef.2315589383460348.40772408379995295",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0"
+          }
+        }
+      ],
+      "name": "custom-library-94",
+      "type": "library",
+      "version": "3.8.5"
+    },
+    {
+      "bom-ref": "BomRef.8870424632079241.9548117119641949",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        }
+      ],
+      "name": "custom-library-95",
+      "type": "library",
+      "version": "4.5.8"
+    },
+    {
+      "bom-ref": "BomRef.8225177536201075.5544747208401797",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-96",
+      "type": "library",
+      "version": "2.2.4"
+    },
+    {
+      "bom-ref": "BomRef.9796560030772754.5427305459751989",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "name": "custom-library-97",
+      "type": "library",
+      "version": "0.8.3"
+    },
+    {
+      "bom-ref": "BomRef.004226988558087452.6647036631425676",
+      "licenses": [
+        {
+          "license": {
+            "id": "CC0-1.0"
+          }
+        }
+      ],
+      "name": "custom-library-98",
+      "type": "library",
+      "version": "0.0.9"
+    },
+    {
+      "bom-ref": "BomRef.8324359438494676.4744486741283289",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "name": "custom-library-99",
+      "type": "library",
+      "version": "3.4.5"
+    },
+    {
+      "bom-ref": "BomRef.8192323373088132.5253970476935745",
+      "licenses": [
+        {
+          "license": {
+            "name": "Copyright (c) 2015, matplotlib project"
+          }
+        }
+      ],
+      "name": "cycler",
+      "type": "library",
+      "version": "0.12.1"
+    },
+    {
+      "bom-ref": "BomRef.2166349958599012.20425665177814945",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "cyclonedx-python-lib",
+      "type": "library",
+      "version": "11.1.0"
+    },
+    {
+      "bom-ref": "BomRef.33961968919263397.054719412780285914",
+      "licenses": [
+        {
+          "license": {
+            "name": "PSFL"
+          }
+        }
+      ],
+      "name": "defusedxml",
+      "type": "library",
+      "version": "0.7.1"
+    },
+    {
+      "bom-ref": "BomRef.7593297307182133.8023458540348256",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "fonttools",
+      "type": "library",
+      "version": "4.59.2"
+    },
+    {
+      "bom-ref": "BomRef.026234928244223576.3407748892568542",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD 3-Clause"
+          }
+        }
+      ],
+      "name": "joblib",
+      "type": "library",
+      "version": "1.5.2"
+    },
+    {
+      "bom-ref": "BomRef.4949950568451883.809312666699001",
+      "licenses": [
+        {
+          "license": {
+            "name": "========================="
+          }
+        }
+      ],
+      "name": "kiwisolver",
+      "type": "library",
+      "version": "1.4.9"
+    },
+    {
+      "bom-ref": "BomRef.36441815711393644.17222165698780956",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "license-expression",
+      "type": "library",
+      "version": "30.4.4"
+    },
+    {
+      "bom-ref": "BomRef.5020725255014118.41119982650397435",
+      "licenses": [
+        {
+          "license": {
+            "name": "License agreement for matplotlib versions 1.3.0 and later"
+          }
+        }
+      ],
+      "name": "matplotlib",
+      "type": "library",
+      "version": "3.10.6"
+    },
+    {
+      "bom-ref": "BomRef.7600558996926091.2676030254476939",
+      "licenses": [
+        {
+          "license": {
+            "name": "Copyright (c) 2005-2025, NumPy Developers."
+          }
+        }
+      ],
+      "name": "numpy",
+      "type": "library",
+      "version": "2.3.2"
+    },
+    {
+      "bom-ref": "BomRef.7333074349066723.2903805723989441",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "packageurl-python",
+      "type": "library",
+      "version": "0.17.5"
+    },
+    {
+      "bom-ref": "BomRef.6894339644266192.5024677982647189",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNKNOWN"
+          }
+        }
+      ],
+      "name": "packaging",
+      "type": "library",
+      "version": "25.0"
+    },
+    {
+      "bom-ref": "BomRef.31724704435968265.03909814809448697",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD 3-Clause License"
+          }
+        }
+      ],
+      "name": "pandas",
+      "type": "library",
+      "version": "2.3.2"
+    },
+    {
+      "bom-ref": "BomRef.06875395121049266.30980626178429815",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNKNOWN"
+          }
+        }
+      ],
+      "name": "pillow",
+      "type": "library",
+      "version": "11.3.0"
+    },
+    {
+      "bom-ref": "BomRef.822043330738896.8886912994158468",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "pip",
+      "type": "library",
+      "version": "25.0.1"
+    },
+    {
+      "bom-ref": "BomRef.5554186060552266.8551185535821899",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "py-serializable",
+      "type": "library",
+      "version": "2.1.0"
+    },
+    {
+      "bom-ref": "BomRef.2643522125755303.9195338189831799",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNKNOWN"
+          }
+        }
+      ],
+      "name": "pyparsing",
+      "type": "library",
+      "version": "3.2.3"
+    },
+    {
+      "bom-ref": "BomRef.7516229596665943.2274279969174936",
+      "licenses": [
+        {
+          "license": {
+            "name": "Dual License"
+          }
+        }
+      ],
+      "name": "python-dateutil",
+      "type": "library",
+      "version": "2.9.0.post0"
+    },
+    {
+      "bom-ref": "BomRef.7694736507054485.015244265523234102",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "pytz",
+      "type": "library",
+      "version": "2025.2"
+    },
+    {
+      "bom-ref": "BomRef.32226859617444836.9658007079517253",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "pyyaml",
+      "type": "library",
+      "version": "6.0.2"
+    },
+    {
+      "bom-ref": "BomRef.9579188793915507.32504001279353056",
+      "licenses": [
+        {
+          "license": {
+            "name": "UNKNOWN"
+          }
+        }
+      ],
+      "name": "scikit-learn",
+      "type": "library",
+      "version": "1.7.1"
+    },
+    {
+      "bom-ref": "BomRef.9709791542814733.526541153965145",
+      "licenses": [
+        {
+          "license": {
+            "name": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers."
+          }
+        }
+      ],
+      "name": "scipy",
+      "type": "library",
+      "version": "1.16.1"
+    },
+    {
+      "bom-ref": "BomRef.2591791152129277.1626624682946235",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "name": "six",
+      "type": "library",
+      "version": "1.17.0"
+    },
+    {
+      "bom-ref": "BomRef.39929810839779256.6781130473383103",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache 2.0"
+          }
+        }
+      ],
+      "name": "sortedcontainers",
+      "type": "library",
+      "version": "2.4.0"
+    },
+    {
+      "bom-ref": "BomRef.07360530283152678.29332803621729797",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "name": "threadpoolctl",
+      "type": "library",
+      "version": "3.6.0"
+    },
+    {
+      "bom-ref": "BomRef.2897506195130056.1467203334924303",
+      "licenses": [
+        {
+          "expression": "MPL-2.0 AND MIT"
+        }
+      ],
+      "name": "tqdm",
+      "type": "library",
+      "version": "4.67.1"
+    },
+    {
+      "bom-ref": "BomRef.03520871261025926.6078136040102192",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "tzdata",
+      "type": "library",
+      "version": "2025.2"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "BomRef.109138206716349.594898214138695"
+    },
+    {
+      "ref": "BomRef.17063980449934812.029471759506536577"
+    },
+    {
+      "ref": "BomRef.9940939404285906.9042702035818289"
+    },
+    {
+      "ref": "BomRef.34647877692673934.5086084047869266"
+    },
+    {
+      "ref": "BomRef.8004868954748592.8114569395955517"
+    },
+    {
+      "ref": "BomRef.3621046985765698.24302207419687516"
+    },
+    {
+      "ref": "BomRef.19796990547403748.9585162594910213"
+    },
+    {
+      "ref": "BomRef.11230581866063027.1679216455564435"
+    },
+    {
+      "ref": "BomRef.17589928287291712.1459451953997013"
+    },
+    {
+      "ref": "BomRef.8088537843386503.8885630121117623"
+    },
+    {
+      "ref": "BomRef.7057439409277582.3727842958212797"
+    },
+    {
+      "ref": "BomRef.9557896961099617.06373213413514356"
+    },
+    {
+      "ref": "BomRef.5472522601196166.15779622518619518"
+    },
+    {
+      "ref": "BomRef.7707062084591266.9809095691232783"
+    },
+    {
+      "ref": "BomRef.25451221672155444.6503078280327574"
+    },
+    {
+      "ref": "BomRef.3830713217279613.4283608973974605"
+    },
+    {
+      "ref": "BomRef.061909366005945765.013293931494546163"
+    },
+    {
+      "ref": "BomRef.8537427610086435.4193559778893613"
+    },
+    {
+      "ref": "BomRef.8235598806739833.041640499172799106"
+    },
+    {
+      "ref": "BomRef.4000762747527642.3931626350101963"
+    },
+    {
+      "ref": "BomRef.19024544606351446.337882595037602"
+    },
+    {
+      "ref": "BomRef.1095565877007223.013125593113320844"
+    },
+    {
+      "ref": "BomRef.7347686265911828.36641607543250954"
+    },
+    {
+      "ref": "BomRef.352987316271516.010967966215027e-05"
+    },
+    {
+      "ref": "BomRef.5511131335444404.42511476695590555"
+    },
+    {
+      "ref": "BomRef.1038928957162174.4123636606847887"
+    },
+    {
+      "ref": "BomRef.38501871152525324.9268646311813341"
+    },
+    {
+      "ref": "BomRef.5334191934730654.14704185367589906"
+    },
+    {
+      "ref": "BomRef.017816721777230482.001386664221154299"
+    },
+    {
+      "ref": "BomRef.4412551215634699.058563486033062384"
+    },
+    {
+      "ref": "BomRef.36207648087321187.3159107788782096"
+    },
+    {
+      "ref": "BomRef.3618333088439405.9967195037468748"
+    },
+    {
+      "ref": "BomRef.059798725693160804.3863727577621129"
+    },
+    {
+      "ref": "BomRef.28424884683304763.6030529056342233"
+    },
+    {
+      "ref": "BomRef.8896437024000664.24083369631056073"
+    },
+    {
+      "ref": "BomRef.23621400171910545.5013526679088827"
+    },
+    {
+      "ref": "BomRef.1650185045880147.5957907736698913"
+    },
+    {
+      "ref": "BomRef.10891895246194616.23100932137934294"
+    },
+    {
+      "ref": "BomRef.1864432225151973.9111641356093134"
+    },
+    {
+      "ref": "BomRef.8474976640440596.4462200873541218"
+    },
+    {
+      "ref": "BomRef.20027915748084313.8922309944415182"
+    },
+    {
+      "ref": "BomRef.0807915424521769.5524171168679926"
+    },
+    {
+      "ref": "BomRef.9902626668813355.766098496716324"
+    },
+    {
+      "ref": "BomRef.323346542349932.5018407530297677"
+    },
+    {
+      "ref": "BomRef.5013648392192949.09288187532132552"
+    },
+    {
+      "ref": "BomRef.6989208394423201.13625037918530225"
+    },
+    {
+      "ref": "BomRef.42645421332382594.2605447834604263"
+    },
+    {
+      "ref": "BomRef.22387556869654568.07848590995223714"
+    },
+    {
+      "ref": "BomRef.014904768013837777.12153430889349837"
+    },
+    {
+      "ref": "BomRef.1684415138209009.4523149482866252"
+    },
+    {
+      "ref": "BomRef.9618961129217641.6299219491341845"
+    },
+    {
+      "ref": "BomRef.019728390712053345.025012249207599146"
+    },
+    {
+      "ref": "BomRef.7865510060008462.5127160993985578"
+    },
+    {
+      "ref": "BomRef.9010750614841638.43983386967388594"
+    },
+    {
+      "ref": "BomRef.6819748478102595.2687231534926201"
+    },
+    {
+      "ref": "BomRef.8637372764682687.9719213945000357"
+    },
+    {
+      "ref": "BomRef.6679008127677379.23749087750823505"
+    },
+    {
+      "ref": "BomRef.659334493786906.84103417967218"
+    },
+    {
+      "ref": "BomRef.6781699291422495.4087122054555413"
+    },
+    {
+      "ref": "BomRef.6913139810605108.19243712305519178"
+    },
+    {
+      "ref": "BomRef.5534789259420847.7537197814197746"
+    },
+    {
+      "ref": "BomRef.6718156541460868.8426934436617705"
+    },
+    {
+      "ref": "BomRef.8675547306893502.07687479340759595"
+    },
+    {
+      "ref": "BomRef.5472696048307437.9063957163144214"
+    },
+    {
+      "ref": "BomRef.3541276187925937.5644166823931629"
+    },
+    {
+      "ref": "BomRef.39726997062618974.8376810066406225"
+    },
+    {
+      "ref": "BomRef.9005667757546743.6996481385315985"
+    },
+    {
+      "ref": "BomRef.6586090504158659.8948727175743107"
+    },
+    {
+      "ref": "BomRef.018952082538120973.5758452913129539"
+    },
+    {
+      "ref": "BomRef.12539452819532393.3723486277340241"
+    },
+    {
+      "ref": "BomRef.5122877950378029.4397013802361379"
+    },
+    {
+      "ref": "BomRef.7148547036324495.780416571959232"
+    },
+    {
+      "ref": "BomRef.685416396405191.2556731776239075"
+    },
+    {
+      "ref": "BomRef.19910548138656836.48406854765282203"
+    },
+    {
+      "ref": "BomRef.3331566254495246.21216628829099005"
+    },
+    {
+      "ref": "BomRef.7823790550393345.3025569012079179"
+    },
+    {
+      "ref": "BomRef.0333006243988222.35283894484797895"
+    },
+    {
+      "ref": "BomRef.3096368022313938.6108878288400469"
+    },
+    {
+      "ref": "BomRef.3948547901136422.2743772534037373"
+    },
+    {
+      "ref": "BomRef.9507303931400916.20573562296424286"
+    },
+    {
+      "ref": "BomRef.40284014512909316.031228348871759848"
+    },
+    {
+      "ref": "BomRef.2283253870488915.3122741379306009"
+    },
+    {
+      "ref": "BomRef.6822399219320768.0008863924188242667"
+    },
+    {
+      "ref": "BomRef.8366792158607788.3303118806582682"
+    },
+    {
+      "ref": "BomRef.09674849769907956.3594174278976292"
+    },
+    {
+      "ref": "BomRef.11570222221606541.4751249494075932"
+    },
+    {
+      "ref": "BomRef.793267585233402.6481669851168507"
+    },
+    {
+      "ref": "BomRef.2611389364682869.07105154272574943"
+    },
+    {
+      "ref": "BomRef.1370719637011838.5227501920552903"
+    },
+    {
+      "ref": "BomRef.888483809776848.8831758967579832"
+    },
+    {
+      "ref": "BomRef.9627130150841327.876658748517622"
+    },
+    {
+      "ref": "BomRef.915510604119654.1185857077991449"
+    },
+    {
+      "ref": "BomRef.932468778916657.46479076824425547"
+    },
+    {
+      "ref": "BomRef.2020348371240922.754676505652799"
+    },
+    {
+      "ref": "BomRef.813337571041831.6977323909760138"
+    },
+    {
+      "ref": "BomRef.7197175840481828.4007243454415931"
+    },
+    {
+      "ref": "BomRef.6382996522231809.4860764678266306"
+    },
+    {
+      "ref": "BomRef.28697639644488193.9014015415760429"
+    },
+    {
+      "ref": "BomRef.9051106708781017.8913028476905038"
+    },
+    {
+      "ref": "BomRef.04930614256853694.46831136631073167"
+    },
+    {
+      "ref": "BomRef.5461288328981022.9504049186358812"
+    },
+    {
+      "ref": "BomRef.21143086708924352.6891539109635475"
+    },
+    {
+      "ref": "BomRef.2963682421126851.7572257983817879"
+    },
+    {
+      "ref": "BomRef.26141604513582306.13821861913275313"
+    },
+    {
+      "ref": "BomRef.7430637686507544.2574406250888801"
+    },
+    {
+      "ref": "BomRef.6521465071102358.9266804901021797"
+    },
+    {
+      "ref": "BomRef.9965291228206999.3727015042849853"
+    },
+    {
+      "ref": "BomRef.3857044981453067.6184568476284672"
+    },
+    {
+      "ref": "BomRef.9792331427627583.7259364541745763"
+    },
+    {
+      "ref": "BomRef.6306666668556685.5832982586202912"
+    },
+    {
+      "ref": "BomRef.5941295658843798.3219895198102958"
+    },
+    {
+      "ref": "BomRef.2584731820212872.3365996124880509"
+    },
+    {
+      "ref": "BomRef.707209210901202.36757429733553326"
+    },
+    {
+      "ref": "BomRef.3979255441104057.19468330412252877"
+    },
+    {
+      "ref": "BomRef.08286100190476953.6668109711993302"
+    },
+    {
+      "ref": "BomRef.10227530282603614.9050598022825421"
+    },
+    {
+      "ref": "BomRef.9660405939191055.004276551804854867"
+    },
+    {
+      "ref": "BomRef.9802988869958463.3747969943335534"
+    },
+    {
+      "ref": "BomRef.9704097733440012.9674559246357619"
+    },
+    {
+      "ref": "BomRef.8392096444132563.9410746197114659"
+    },
+    {
+      "ref": "BomRef.46680520405807113.9037528752690867"
+    },
+    {
+      "ref": "BomRef.7322295427168728.90484569761014"
+    },
+    {
+      "ref": "BomRef.383903112969711.34866242217568133"
+    },
+    {
+      "ref": "BomRef.8360147932391996.24205806263664575"
+    },
+    {
+      "ref": "BomRef.10546109968335393.1336104920075003"
+    },
+    {
+      "ref": "BomRef.7190196795511504.04911938486063505"
+    },
+    {
+      "ref": "BomRef.2656718302963079.980578471725327"
+    },
+    {
+      "ref": "BomRef.3068923112105152.775870683430987"
+    },
+    {
+      "ref": "BomRef.040836395211077514.027322487923245542"
+    },
+    {
+      "ref": "BomRef.6883653096341927.9862370253603894"
+    },
+    {
+      "ref": "BomRef.5992962262791449.9922000326995264"
+    },
+    {
+      "ref": "BomRef.9841990622702258.18054543068365747"
+    },
+    {
+      "ref": "BomRef.2526101721050774.06861022444416254"
+    },
+    {
+      "ref": "BomRef.7246618101718889.022691714953804176"
+    },
+    {
+      "ref": "BomRef.12119160014689834.8561565673209471"
+    },
+    {
+      "ref": "BomRef.6792566132877186.6085749842160855"
+    },
+    {
+      "ref": "BomRef.5783132745059798.7295294242214521"
+    },
+    {
+      "ref": "BomRef.3624807503360382.6433865807481509"
+    },
+    {
+      "ref": "BomRef.6513636833329289.2651728133021931"
+    },
+    {
+      "ref": "BomRef.7795209157639219.9526092714823783"
+    },
+    {
+      "ref": "BomRef.9729005240228984.5567104596053045"
+    },
+    {
+      "ref": "BomRef.9450969914350675.43646803409173496"
+    },
+    {
+      "ref": "BomRef.4441000165871579.6782762942090729"
+    },
+    {
+      "ref": "BomRef.36524895881328745.8267158092584898"
+    },
+    {
+      "ref": "BomRef.9627380165140629.7169323851904085"
+    },
+    {
+      "ref": "BomRef.19326610922268683.24830024314225452"
+    },
+    {
+      "ref": "BomRef.7590006237443614.5831326683362917"
+    },
+    {
+      "ref": "BomRef.17953771575765454.46666358286104226"
+    },
+    {
+      "ref": "BomRef.3109723173780735.6494515372696255"
+    },
+    {
+      "ref": "BomRef.831394900287582.10326355553369126"
+    },
+    {
+      "ref": "BomRef.6402415327002442.047006665303023"
+    },
+    {
+      "ref": "BomRef.12027590208613659.3331415480639365"
+    },
+    {
+      "ref": "BomRef.8116798825090138.08708039225247122"
+    },
+    {
+      "ref": "BomRef.05439966573366073.6652209904368849"
+    },
+    {
+      "ref": "BomRef.8127945996813293.3344068279481144"
+    },
+    {
+      "ref": "BomRef.9758499570168735.9145878589876273"
+    },
+    {
+      "ref": "BomRef.1527914708464685.19166533552396747"
+    },
+    {
+      "ref": "BomRef.0958479655008222.015919490708218076"
+    },
+    {
+      "ref": "BomRef.15767297626064591.2665219742766387"
+    },
+    {
+      "ref": "BomRef.6617148093427252.33180708697201566"
+    },
+    {
+      "ref": "BomRef.07617576385973457.7522550281120555"
+    },
+    {
+      "ref": "BomRef.20056765233436957.3566020122362491"
+    },
+    {
+      "ref": "BomRef.6490048671145172.5506750950304182"
+    },
+    {
+      "ref": "BomRef.9906325277172915.24705455713707203"
+    },
+    {
+      "ref": "BomRef.08149283399856966.4773498792039653"
+    },
+    {
+      "ref": "BomRef.8047951670460024.05091755431149003"
+    },
+    {
+      "ref": "BomRef.6958173656550833.056383628178310885"
+    },
+    {
+      "ref": "BomRef.34028124441149254.921978888591978"
+    },
+    {
+      "ref": "BomRef.20062739710721977.9173166196369201"
+    },
+    {
+      "ref": "BomRef.7136250537866216.475890680831352"
+    },
+    {
+      "ref": "BomRef.675797360607461.06296540535379969"
+    },
+    {
+      "ref": "BomRef.4775988301018407.3471994938978855"
+    },
+    {
+      "ref": "BomRef.3738660029534828.3185778239052175"
+    },
+    {
+      "ref": "BomRef.8889970733034382.6734129317369936"
+    },
+    {
+      "ref": "BomRef.7532764270745598.3506741408458658"
+    },
+    {
+      "ref": "BomRef.7704001831640984.1757344077505455"
+    },
+    {
+      "ref": "BomRef.7509331372096961.44028712303727413"
+    },
+    {
+      "ref": "BomRef.6394190898770712.7691809393847194"
+    },
+    {
+      "ref": "BomRef.44700801079811947.5844482824987571"
+    },
+    {
+      "ref": "BomRef.2580984652402971.07006967886950966"
+    },
+    {
+      "ref": "BomRef.9556151933517192.6770778393051482"
+    },
+    {
+      "ref": "BomRef.6698046432378401.6435472808017434"
+    },
+    {
+      "ref": "BomRef.9418034755649392.9844422405395428"
+    },
+    {
+      "ref": "BomRef.4985900829518587.45891968699513364"
+    },
+    {
+      "ref": "BomRef.12558233164202093.06707283055792579"
+    },
+    {
+      "ref": "BomRef.43414079275625495.7223989511824013"
+    },
+    {
+      "ref": "BomRef.2562516466835273.4878157850111029"
+    },
+    {
+      "ref": "BomRef.48278688822564186.04087313052283925"
+    },
+    {
+      "ref": "BomRef.41981938615888903.3152963088918188"
+    },
+    {
+      "ref": "BomRef.06367842463138118.8868826793670082"
+    },
+    {
+      "ref": "BomRef.520049698620698.01120291745141666"
+    },
+    {
+      "ref": "BomRef.9833955406497499.5197915788345432"
+    },
+    {
+      "ref": "BomRef.24403211683446235.024947996890273827"
+    },
+    {
+      "ref": "BomRef.9871465690709398.4916884081355185"
+    },
+    {
+      "ref": "BomRef.540471866403266.03248934065589881"
+    },
+    {
+      "ref": "BomRef.057039805422405165.9418933830074642"
+    },
+    {
+      "ref": "BomRef.3789389715596162.14271574744461013"
+    },
+    {
+      "ref": "BomRef.6637907597582581.16321167470294295"
+    },
+    {
+      "ref": "BomRef.6280140009575725.5923738567213607"
+    },
+    {
+      "ref": "BomRef.7910435492963179.009666523966151308"
+    },
+    {
+      "ref": "BomRef.6951654915941534.17808992229580267"
+    },
+    {
+      "ref": "BomRef.9307956599973786.455387967753239"
+    },
+    {
+      "ref": "BomRef.14880758379560688.8702055478759242"
+    },
+    {
+      "ref": "BomRef.5802259850135205.1600032885007311"
+    },
+    {
+      "ref": "BomRef.16054470482751837.8657491323591592"
+    },
+    {
+      "ref": "BomRef.5328452681353306.7098385811021162"
+    },
+    {
+      "ref": "BomRef.16672933615506336.4921447394227034"
+    },
+    {
+      "ref": "BomRef.15486575188504803.37014050265022946"
+    },
+    {
+      "ref": "BomRef.47356372648080447.4214802286700824"
+    },
+    {
+      "ref": "BomRef.9984515063558987.6028591184634706"
+    },
+    {
+      "ref": "BomRef.8015345611967407.33217429834769086"
+    },
+    {
+      "ref": "BomRef.4093205183677078.7434601141568021"
+    },
+    {
+      "ref": "BomRef.07150422951625046.1689296309407422"
+    },
+    {
+      "ref": "BomRef.5479280183297637.7721976823420141"
+    },
+    {
+      "ref": "BomRef.6998609936994032.34915841968129124"
+    },
+    {
+      "ref": "BomRef.4494389679496644.9637024834622271"
+    },
+    {
+      "ref": "BomRef.33857542120017514.14357969696012352"
+    },
+    {
+      "ref": "BomRef.609019269875224.6383885256348744"
+    },
+    {
+      "ref": "BomRef.8566684599194192.8341812311571921"
+    },
+    {
+      "ref": "BomRef.2925040900006354.28299745689087286"
+    },
+    {
+      "ref": "BomRef.6814328244743421.08830218630741993"
+    },
+    {
+      "ref": "BomRef.3289529175505591.2672702675701015"
+    },
+    {
+      "ref": "BomRef.6128187921383125.32928648689317563"
+    },
+    {
+      "ref": "BomRef.6228090178937549.8455816077312497"
+    },
+    {
+      "ref": "BomRef.25846110670164346.27997820398446804"
+    },
+    {
+      "ref": "BomRef.7388727334276034.3293556838742977"
+    },
+    {
+      "ref": "BomRef.6039827107981276.5837822889360857"
+    },
+    {
+      "ref": "BomRef.5590929660131838.8384321440213364"
+    },
+    {
+      "ref": "BomRef.6565838068893524.3382145225305587"
+    },
+    {
+      "ref": "BomRef.8040651238425708.3981908284762342"
+    },
+    {
+      "ref": "BomRef.4091507988177363.03165024640480718"
+    },
+    {
+      "ref": "BomRef.47620439044620266.08765976015324761"
+    },
+    {
+      "ref": "BomRef.9155752578008577.9206497644340782"
+    },
+    {
+      "ref": "BomRef.9022239589648033.913261098420335"
+    },
+    {
+      "ref": "BomRef.769421071650258.8613336018674145"
+    },
+    {
+      "ref": "BomRef.04782741291098436.5010178539614264"
+    },
+    {
+      "ref": "BomRef.6078016244706275.7090517553460605"
+    },
+    {
+      "ref": "BomRef.35841008453192247.05362537110878629"
+    },
+    {
+      "ref": "BomRef.4375701638538304.6136770909936987"
+    },
+    {
+      "ref": "BomRef.25477953546806087.9235467133761546"
+    },
+    {
+      "ref": "BomRef.6430548572139302.7088612889950153"
+    },
+    {
+      "ref": "BomRef.1462387465774183.008477993993632027"
+    },
+    {
+      "ref": "BomRef.0765576270388112.09990527975762031"
+    },
+    {
+      "ref": "BomRef.24076625421993092.33272818853017383"
+    },
+    {
+      "ref": "BomRef.5049860870305188.28856524036319264"
+    },
+    {
+      "ref": "BomRef.39796097241438155.5606823346204675"
+    },
+    {
+      "ref": "BomRef.14834386926946497.5436148085816355"
+    },
+    {
+      "ref": "BomRef.7398514327547194.7321447871299394"
+    },
+    {
+      "ref": "BomRef.48876563281768093.365836592599332"
+    },
+    {
+      "ref": "BomRef.9657361625535491.7089955338916734"
+    },
+    {
+      "ref": "BomRef.8091823337750323.9988654671862319"
+    },
+    {
+      "ref": "BomRef.8500590454469079.7417694481395616"
+    },
+    {
+      "ref": "BomRef.19978798185673274.42507811699836084"
+    },
+    {
+      "ref": "BomRef.14276352071083875.34348388458906187"
+    },
+    {
+      "ref": "BomRef.24664954019845986.46426563400675513"
+    },
+    {
+      "ref": "BomRef.8713928316362963.5405677769757617"
+    },
+    {
+      "ref": "BomRef.48646162738196175.08537315094992648"
+    },
+    {
+      "ref": "BomRef.6510216280654096.7231549030753772"
+    },
+    {
+      "ref": "BomRef.8517186240422518.05077394749409425"
+    },
+    {
+      "ref": "BomRef.703388813001509.5448042470784314"
+    },
+    {
+      "ref": "BomRef.04741698886552603.05334091347689052"
+    },
+    {
+      "ref": "BomRef.07290927316017226.49958388547153165"
+    },
+    {
+      "ref": "BomRef.8486296671344887.4794734400649796"
+    },
+    {
+      "ref": "BomRef.16745877032031997.30712540989515125"
+    },
+    {
+      "ref": "BomRef.7725159052180374.628934409154102"
+    },
+    {
+      "ref": "BomRef.4794801831195423.019519864447955282"
+    },
+    {
+      "ref": "BomRef.5997957821747055.9129694357264837"
+    },
+    {
+      "ref": "BomRef.5104276361070619.6931703438610634"
+    },
+    {
+      "ref": "BomRef.9448748985885441.9513184436757909"
+    },
+    {
+      "ref": "BomRef.702109236416503.06017389637855142"
+    },
+    {
+      "ref": "BomRef.889285646472575.1989555769936998"
+    },
+    {
+      "ref": "BomRef.6044535580306842.9693749343693371"
+    },
+    {
+      "ref": "BomRef.5589819102106103.6700607728371831"
+    },
+    {
+      "ref": "BomRef.34487194254761.7777037928142239"
+    },
+    {
+      "ref": "BomRef.6819893139913815.4001166956161887"
+    },
+    {
+      "ref": "BomRef.6139680659303142.8477850184657666"
+    },
+    {
+      "ref": "BomRef.17316901813882946.8072102848380345"
+    },
+    {
+      "ref": "BomRef.7391088660421024.5560813869803429"
+    },
+    {
+      "ref": "BomRef.8046698684422339.5187897451739447"
+    },
+    {
+      "ref": "BomRef.6820204481730892.4459984786477289"
+    },
+    {
+      "ref": "BomRef.9940134494998083.6581288534076355"
+    },
+    {
+      "ref": "BomRef.15259310755271493.5131611064655681"
+    },
+    {
+      "ref": "BomRef.9616735216768708.8800191412476861"
+    },
+    {
+      "ref": "BomRef.40118331137730145.6391791087500086"
+    },
+    {
+      "ref": "BomRef.5223661597294584.16133408691437823"
+    },
+    {
+      "ref": "BomRef.5797347601853533.6350658494183508"
+    },
+    {
+      "ref": "BomRef.5156931819476257.2111546323030845"
+    },
+    {
+      "ref": "BomRef.43781980557901656.10070202829041097"
+    },
+    {
+      "ref": "BomRef.7075757990904801.9165487781387819"
+    },
+    {
+      "ref": "BomRef.49291327175650157.9568386951282529"
+    },
+    {
+      "ref": "BomRef.607616542935115.8096787879214448"
+    },
+    {
+      "ref": "BomRef.9187592933541182.6503801203733599"
+    },
+    {
+      "ref": "BomRef.805186395495254.2723542003717695"
+    },
+    {
+      "ref": "BomRef.6193143789720253.36332157049353664"
+    },
+    {
+      "ref": "BomRef.11118037231333644.14610307148521617"
+    },
+    {
+      "ref": "BomRef.8010073538451298.664990111979387"
+    },
+    {
+      "ref": "BomRef.5673006578890586.9932143994176331"
+    },
+    {
+      "ref": "BomRef.2315589383460348.40772408379995295"
+    },
+    {
+      "ref": "BomRef.8870424632079241.9548117119641949"
+    },
+    {
+      "ref": "BomRef.8225177536201075.5544747208401797"
+    },
+    {
+      "ref": "BomRef.9796560030772754.5427305459751989"
+    },
+    {
+      "ref": "BomRef.004226988558087452.6647036631425676"
+    },
+    {
+      "ref": "BomRef.8324359438494676.4744486741283289"
+    },
+    {
+      "ref": "BomRef.8192323373088132.5253970476935745"
+    },
+    {
+      "ref": "BomRef.2166349958599012.20425665177814945"
+    },
+    {
+      "ref": "BomRef.33961968919263397.054719412780285914"
+    },
+    {
+      "ref": "BomRef.7593297307182133.8023458540348256"
+    },
+    {
+      "ref": "BomRef.026234928244223576.3407748892568542"
+    },
+    {
+      "ref": "BomRef.4949950568451883.809312666699001"
+    },
+    {
+      "ref": "BomRef.36441815711393644.17222165698780956"
+    },
+    {
+      "ref": "BomRef.5020725255014118.41119982650397435"
+    },
+    {
+      "ref": "BomRef.7600558996926091.2676030254476939"
+    },
+    {
+      "ref": "BomRef.7333074349066723.2903805723989441"
+    },
+    {
+      "ref": "BomRef.6894339644266192.5024677982647189"
+    },
+    {
+      "ref": "BomRef.31724704435968265.03909814809448697"
+    },
+    {
+      "ref": "BomRef.06875395121049266.30980626178429815"
+    },
+    {
+      "ref": "BomRef.822043330738896.8886912994158468"
+    },
+    {
+      "ref": "BomRef.5554186060552266.8551185535821899"
+    },
+    {
+      "ref": "BomRef.2643522125755303.9195338189831799"
+    },
+    {
+      "ref": "BomRef.7516229596665943.2274279969174936"
+    },
+    {
+      "ref": "BomRef.7694736507054485.015244265523234102"
+    },
+    {
+      "ref": "BomRef.32226859617444836.9658007079517253"
+    },
+    {
+      "ref": "BomRef.9579188793915507.32504001279353056"
+    },
+    {
+      "ref": "BomRef.9709791542814733.526541153965145"
+    },
+    {
+      "ref": "BomRef.2591791152129277.1626624682946235"
+    },
+    {
+      "ref": "BomRef.39929810839779256.6781130473383103"
+    },
+    {
+      "ref": "BomRef.07360530283152678.29332803621729797"
+    },
+    {
+      "ref": "BomRef.2897506195130056.1467203334924303"
+    },
+    {
+      "ref": "BomRef.03520871261025926.6078136040102192"
+    }
+  ],
+  "metadata": {
+    "timestamp": "2025-09-15T05:46:46.962283+00:00",
+    "tools": [
+      {
+        "name": "Custom Python SBOM Generator",
+        "version": "1.0.0"
+      }
+    ]
+  },
+  "serialNumber": "urn:uuid:4c6905a9-c91c-40cc-9ab1-a9151c221841",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5"
+}
