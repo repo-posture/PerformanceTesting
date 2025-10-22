@@ -1,0 +1,1587 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:901a57fd-0d33-4f5b-87b7-0b2ae6c8d8e8",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-10-22T10:07:16Z",
+    "tools": {
+      "services": [
+        {
+          "provider": {
+            "name": "Snyk"
+          },
+          "name": "SBOM Export API",
+          "version": "v1.112.2-3-gc8f4500"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "1-redis@latest",
+      "type": "container",
+      "name": "redis",
+      "version": "latest"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "1-docker-image|redis@latest",
+      "type": "library",
+      "group": "debian",
+      "name": "docker-image|redis",
+      "version": "latest",
+      "purl": "pkg:deb/debian/docker-image%7Credis@latest?distro=bookworm"
+    },
+    {
+      "bom-ref": "2-acl/libacl1@2.3.1-3",
+      "type": "library",
+      "group": "debian",
+      "name": "acl/libacl1",
+      "version": "2.3.1-3",
+      "purl": "pkg:deb/debian/libacl1@2.3.1-3?distro=debian-bookworm&upstream=acl"
+    },
+    {
+      "bom-ref": "3-audit/libaudit-common@1:3.0.9-1",
+      "type": "library",
+      "group": "debian",
+      "name": "audit/libaudit-common",
+      "version": "1:3.0.9-1",
+      "purl": "pkg:deb/debian/libaudit-common@1%3A3.0.9-1?distro=debian-bookworm&upstream=audit"
+    },
+    {
+      "bom-ref": "4-libcap-ng/libcap-ng0@0.8.3-1+b3",
+      "type": "library",
+      "group": "debian",
+      "name": "libcap-ng/libcap-ng0",
+      "version": "0.8.3-1+b3",
+      "purl": "pkg:deb/debian/libcap-ng0@0.8.3-1%2Bb3?distro=debian-bookworm&upstream=libcap-ng%400.8.3-1"
+    },
+    {
+      "bom-ref": "5-audit/libaudit1@1:3.0.9-1",
+      "type": "library",
+      "group": "debian",
+      "name": "audit/libaudit1",
+      "version": "1:3.0.9-1",
+      "purl": "pkg:deb/debian/libaudit1@1%3A3.0.9-1?distro=debian-bookworm&upstream=audit"
+    },
+    {
+      "bom-ref": "6-audit/libaudit1@1:3.0.9-1",
+      "type": "library",
+      "group": "debian",
+      "name": "audit/libaudit1",
+      "version": "1:3.0.9-1",
+      "purl": "pkg:deb/debian/libaudit1@1%3A3.0.9-1?distro=debian-bookworm&upstream=audit"
+    },
+    {
+      "bom-ref": "7-pcre2/libpcre2-8-0@10.42-1",
+      "type": "library",
+      "group": "debian",
+      "name": "pcre2/libpcre2-8-0",
+      "version": "10.42-1",
+      "purl": "pkg:deb/debian/libpcre2-8-0@10.42-1?distro=debian-bookworm&upstream=pcre2"
+    },
+    {
+      "bom-ref": "8-libselinux/libselinux1@3.4-1+b6",
+      "type": "library",
+      "group": "debian",
+      "name": "libselinux/libselinux1",
+      "version": "3.4-1+b6",
+      "purl": "pkg:deb/debian/libselinux1@3.4-1%2Bb6?distro=debian-bookworm&upstream=libselinux%403.4-1"
+    },
+    {
+      "bom-ref": "9-libselinux/libselinux1@3.4-1+b6",
+      "type": "library",
+      "group": "debian",
+      "name": "libselinux/libselinux1",
+      "version": "3.4-1+b6",
+      "purl": "pkg:deb/debian/libselinux1@3.4-1%2Bb6?distro=debian-bookworm&upstream=libselinux%403.4-1"
+    },
+    {
+      "bom-ref": "10-bzip2/libbz2-1.0@1.0.8-5+b1",
+      "type": "library",
+      "group": "debian",
+      "name": "bzip2/libbz2-1.0",
+      "version": "1.0.8-5+b1",
+      "purl": "pkg:deb/debian/libbz2-1.0@1.0.8-5%2Bb1?distro=debian-bookworm&upstream=bzip2%401.0.8-5"
+    },
+    {
+      "bom-ref": "11-libsemanage/libsemanage-common@3.4-1",
+      "type": "library",
+      "group": "debian",
+      "name": "libsemanage/libsemanage-common",
+      "version": "3.4-1",
+      "purl": "pkg:deb/debian/libsemanage-common@3.4-1?distro=debian-bookworm&upstream=libsemanage"
+    },
+    {
+      "bom-ref": "12-libsepol/libsepol2@3.4-2.1",
+      "type": "library",
+      "group": "debian",
+      "name": "libsepol/libsepol2",
+      "version": "3.4-2.1",
+      "purl": "pkg:deb/debian/libsepol2@3.4-2.1?distro=debian-bookworm&upstream=libsepol"
+    },
+    {
+      "bom-ref": "13-libsemanage/libsemanage2@3.4-1+b5",
+      "type": "library",
+      "group": "debian",
+      "name": "libsemanage/libsemanage2",
+      "version": "3.4-1+b5",
+      "purl": "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?distro=debian-bookworm&upstream=libsemanage%403.4-1"
+    },
+    {
+      "bom-ref": "14-libsemanage/libsemanage2@3.4-1+b5",
+      "type": "library",
+      "group": "debian",
+      "name": "libsemanage/libsemanage2",
+      "version": "3.4-1+b5",
+      "purl": "pkg:deb/debian/libsemanage2@3.4-1%2Bb5?distro=debian-bookworm&upstream=libsemanage%403.4-1"
+    },
+    {
+      "bom-ref": "15-libxcrypt/libcrypt1@1:4.4.33-2",
+      "type": "library",
+      "group": "debian",
+      "name": "libxcrypt/libcrypt1",
+      "version": "1:4.4.33-2",
+      "purl": "pkg:deb/debian/libcrypt1@1%3A4.4.33-2?distro=debian-bookworm&upstream=libxcrypt"
+    },
+    {
+      "bom-ref": "16-db5.3/libdb5.3@5.3.28+dfsg2-1",
+      "type": "library",
+      "group": "debian",
+      "name": "db5.3/libdb5.3",
+      "version": "5.3.28+dfsg2-1",
+      "purl": "pkg:deb/debian/libdb5.3@5.3.28%2Bdfsg2-1?distro=debian-bookworm&upstream=db5.3"
+    },
+    {
+      "bom-ref": "17-debconf@1.5.82",
+      "type": "library",
+      "group": "debian",
+      "name": "debconf",
+      "version": "1.5.82",
+      "purl": "pkg:deb/debian/debconf@1.5.82?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "18-pam/libpam0g@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam0g",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "19-pam/libpam0g@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam0g",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam0g@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "20-pam/libpam-modules-bin@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam-modules-bin",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "21-pam/libpam-modules-bin@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam-modules-bin",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam-modules-bin@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "22-pam/libpam-modules@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam-modules",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "23-pam/libpam-modules@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam-modules",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam-modules@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "24-shadow/passwd@1:4.13+dfsg1-1+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "shadow/passwd",
+      "version": "1:4.13+dfsg1-1+deb12u1",
+      "purl": "pkg:deb/debian/passwd@1%3A4.13%2Bdfsg1-1%2Bdeb12u1?distro=debian-bookworm&upstream=shadow"
+    },
+    {
+      "bom-ref": "25-shadow/passwd@1:4.13+dfsg1-1+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "shadow/passwd",
+      "version": "1:4.13+dfsg1-1+deb12u1",
+      "purl": "pkg:deb/debian/passwd@1%3A4.13%2Bdfsg1-1%2Bdeb12u1?distro=debian-bookworm&upstream=shadow"
+    },
+    {
+      "bom-ref": "26-adduser@3.134",
+      "type": "library",
+      "group": "debian",
+      "name": "adduser",
+      "version": "3.134",
+      "purl": "pkg:deb/debian/adduser@3.134?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "27-adduser@3.134",
+      "type": "library",
+      "group": "debian",
+      "name": "adduser",
+      "version": "3.134",
+      "purl": "pkg:deb/debian/adduser@3.134?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "28-gcc-12/libstdc++6@12.2.0-14+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "gcc-12/libstdc++6",
+      "version": "12.2.0-14+deb12u1",
+      "purl": "pkg:deb/debian/libstdc%2B%2B6@12.2.0-14%2Bdeb12u1?distro=debian-bookworm&upstream=gcc-12"
+    },
+    {
+      "bom-ref": "29-libgcrypt20@1.10.1-3",
+      "type": "library",
+      "group": "debian",
+      "name": "libgcrypt20",
+      "version": "1.10.1-3",
+      "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "30-libgcrypt20@1.10.1-3",
+      "type": "library",
+      "group": "debian",
+      "name": "libgcrypt20",
+      "version": "1.10.1-3",
+      "purl": "pkg:deb/debian/libgcrypt20@1.10.1-3?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "31-libzstd/libzstd1@1.5.4+dfsg2-5",
+      "type": "library",
+      "group": "debian",
+      "name": "libzstd/libzstd1",
+      "version": "1.5.4+dfsg2-5",
+      "purl": "pkg:deb/debian/libzstd1@1.5.4%2Bdfsg2-5?distro=debian-bookworm&upstream=libzstd"
+    },
+    {
+      "bom-ref": "32-lz4/liblz4-1@1.9.4-1",
+      "type": "library",
+      "group": "debian",
+      "name": "lz4/liblz4-1",
+      "version": "1.9.4-1",
+      "purl": "pkg:deb/debian/liblz4-1@1.9.4-1?distro=debian-bookworm&upstream=lz4"
+    },
+    {
+      "bom-ref": "33-libcap2@1:2.66-4+deb12u2",
+      "type": "library",
+      "group": "debian",
+      "name": "libcap2",
+      "version": "1:2.66-4+deb12u2",
+      "purl": "pkg:deb/debian/libcap2@1%3A2.66-4%2Bdeb12u2?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "34-xz-utils/liblzma5@5.4.1-1",
+      "type": "library",
+      "group": "debian",
+      "name": "xz-utils/liblzma5",
+      "version": "5.4.1-1",
+      "purl": "pkg:deb/debian/liblzma5@5.4.1-1?distro=debian-bookworm&upstream=xz-utils"
+    },
+    {
+      "bom-ref": "35-systemd/libsystemd0@252.39-1~deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "systemd/libsystemd0",
+      "version": "252.39-1~deb12u1",
+      "purl": "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?distro=debian-bookworm&upstream=systemd"
+    },
+    {
+      "bom-ref": "36-systemd/libsystemd0@252.39-1~deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "systemd/libsystemd0",
+      "version": "252.39-1~deb12u1",
+      "purl": "pkg:deb/debian/libsystemd0@252.39-1~deb12u1?distro=debian-bookworm&upstream=systemd"
+    },
+    {
+      "bom-ref": "37-systemd/libudev1@252.39-1~deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "systemd/libudev1",
+      "version": "252.39-1~deb12u1",
+      "purl": "pkg:deb/debian/libudev1@252.39-1~deb12u1?distro=debian-bookworm&upstream=systemd"
+    },
+    {
+      "bom-ref": "38-xxhash/libxxhash0@0.8.1-1",
+      "type": "library",
+      "group": "debian",
+      "name": "xxhash/libxxhash0",
+      "version": "0.8.1-1",
+      "purl": "pkg:deb/debian/libxxhash0@0.8.1-1?distro=debian-bookworm&upstream=xxhash"
+    },
+    {
+      "bom-ref": "39-zlib/zlib1g@1:1.2.13.dfsg-1",
+      "type": "library",
+      "group": "debian",
+      "name": "zlib/zlib1g",
+      "version": "1:1.2.13.dfsg-1",
+      "purl": "pkg:deb/debian/zlib1g@1%3A1.2.13.dfsg-1?distro=debian-bookworm&upstream=zlib"
+    },
+    {
+      "bom-ref": "40-apt/libapt-pkg6.0@2.6.1",
+      "type": "library",
+      "group": "debian",
+      "name": "apt/libapt-pkg6.0",
+      "version": "2.6.1",
+      "purl": "pkg:deb/debian/libapt-pkg6.0@2.6.1?distro=debian-bookworm&upstream=apt"
+    },
+    {
+      "bom-ref": "41-apt/libapt-pkg6.0@2.6.1",
+      "type": "library",
+      "group": "debian",
+      "name": "apt/libapt-pkg6.0",
+      "version": "2.6.1",
+      "purl": "pkg:deb/debian/libapt-pkg6.0@2.6.1?distro=debian-bookworm&upstream=apt"
+    },
+    {
+      "bom-ref": "42-debian-archive-keyring@2023.3+deb12u2",
+      "type": "library",
+      "group": "debian",
+      "name": "debian-archive-keyring",
+      "version": "2023.3+deb12u2",
+      "purl": "pkg:deb/debian/debian-archive-keyring@2023.3%2Bdeb12u2?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "43-libgpg-error/libgpg-error0@1.46-1",
+      "type": "library",
+      "group": "debian",
+      "name": "libgpg-error/libgpg-error0",
+      "version": "1.46-1",
+      "purl": "pkg:deb/debian/libgpg-error0@1.46-1?distro=debian-bookworm&upstream=libgpg-error"
+    },
+    {
+      "bom-ref": "44-gnupg2/gpgv@2.2.40-1.1+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "gnupg2/gpgv",
+      "version": "2.2.40-1.1+deb12u1",
+      "purl": "pkg:deb/debian/gpgv@2.2.40-1.1%2Bdeb12u1?distro=debian-bookworm&upstream=gnupg2"
+    },
+    {
+      "bom-ref": "45-gnupg2/gpgv@2.2.40-1.1+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "gnupg2/gpgv",
+      "version": "2.2.40-1.1+deb12u1",
+      "purl": "pkg:deb/debian/gpgv@2.2.40-1.1%2Bdeb12u1?distro=debian-bookworm&upstream=gnupg2"
+    },
+    {
+      "bom-ref": "46-gmp/libgmp10@2:6.2.1+dfsg1-1.1",
+      "type": "library",
+      "group": "debian",
+      "name": "gmp/libgmp10",
+      "version": "2:6.2.1+dfsg1-1.1",
+      "purl": "pkg:deb/debian/libgmp10@2%3A6.2.1%2Bdfsg1-1.1?distro=debian-bookworm&upstream=gmp"
+    },
+    {
+      "bom-ref": "47-libunistring/libunistring2@1.0-2",
+      "type": "library",
+      "group": "debian",
+      "name": "libunistring/libunistring2",
+      "version": "1.0-2",
+      "purl": "pkg:deb/debian/libunistring2@1.0-2?distro=debian-bookworm&upstream=libunistring"
+    },
+    {
+      "bom-ref": "48-libidn2/libidn2-0@2.3.3-1+b1",
+      "type": "library",
+      "group": "debian",
+      "name": "libidn2/libidn2-0",
+      "version": "2.3.3-1+b1",
+      "purl": "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?distro=debian-bookworm&upstream=libidn2%402.3.3-1"
+    },
+    {
+      "bom-ref": "49-libidn2/libidn2-0@2.3.3-1+b1",
+      "type": "library",
+      "group": "debian",
+      "name": "libidn2/libidn2-0",
+      "version": "2.3.3-1+b1",
+      "purl": "pkg:deb/debian/libidn2-0@2.3.3-1%2Bb1?distro=debian-bookworm&upstream=libidn2%402.3.3-1"
+    },
+    {
+      "bom-ref": "50-libtasn1-6@4.19.0-2+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "libtasn1-6",
+      "version": "4.19.0-2+deb12u1",
+      "purl": "pkg:deb/debian/libtasn1-6@4.19.0-2%2Bdeb12u1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "51-nettle/libnettle8@3.8.1-2",
+      "type": "library",
+      "group": "debian",
+      "name": "nettle/libnettle8",
+      "version": "3.8.1-2",
+      "purl": "pkg:deb/debian/libnettle8@3.8.1-2?distro=debian-bookworm&upstream=nettle"
+    },
+    {
+      "bom-ref": "52-nettle/libhogweed6@3.8.1-2",
+      "type": "library",
+      "group": "debian",
+      "name": "nettle/libhogweed6",
+      "version": "3.8.1-2",
+      "purl": "pkg:deb/debian/libhogweed6@3.8.1-2?distro=debian-bookworm&upstream=nettle"
+    },
+    {
+      "bom-ref": "53-nettle/libhogweed6@3.8.1-2",
+      "type": "library",
+      "group": "debian",
+      "name": "nettle/libhogweed6",
+      "version": "3.8.1-2",
+      "purl": "pkg:deb/debian/libhogweed6@3.8.1-2?distro=debian-bookworm&upstream=nettle"
+    },
+    {
+      "bom-ref": "54-libffi/libffi8@3.4.4-1",
+      "type": "library",
+      "group": "debian",
+      "name": "libffi/libffi8",
+      "version": "3.4.4-1",
+      "purl": "pkg:deb/debian/libffi8@3.4.4-1?distro=debian-bookworm&upstream=libffi"
+    },
+    {
+      "bom-ref": "55-p11-kit/libp11-kit0@0.24.1-2",
+      "type": "library",
+      "group": "debian",
+      "name": "p11-kit/libp11-kit0",
+      "version": "0.24.1-2",
+      "purl": "pkg:deb/debian/libp11-kit0@0.24.1-2?distro=debian-bookworm&upstream=p11-kit"
+    },
+    {
+      "bom-ref": "56-p11-kit/libp11-kit0@0.24.1-2",
+      "type": "library",
+      "group": "debian",
+      "name": "p11-kit/libp11-kit0",
+      "version": "0.24.1-2",
+      "purl": "pkg:deb/debian/libp11-kit0@0.24.1-2?distro=debian-bookworm&upstream=p11-kit"
+    },
+    {
+      "bom-ref": "57-gnutls28/libgnutls30@3.7.9-2+deb12u5",
+      "type": "library",
+      "group": "debian",
+      "name": "gnutls28/libgnutls30",
+      "version": "3.7.9-2+deb12u5",
+      "purl": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u5?distro=debian-bookworm&upstream=gnutls28"
+    },
+    {
+      "bom-ref": "58-gnutls28/libgnutls30@3.7.9-2+deb12u5",
+      "type": "library",
+      "group": "debian",
+      "name": "gnutls28/libgnutls30",
+      "version": "3.7.9-2+deb12u5",
+      "purl": "pkg:deb/debian/libgnutls30@3.7.9-2%2Bdeb12u5?distro=debian-bookworm&upstream=gnutls28"
+    },
+    {
+      "bom-ref": "59-libseccomp/libseccomp2@2.5.4-1+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "libseccomp/libseccomp2",
+      "version": "2.5.4-1+deb12u1",
+      "purl": "pkg:deb/debian/libseccomp2@2.5.4-1%2Bdeb12u1?distro=debian-bookworm&upstream=libseccomp"
+    },
+    {
+      "bom-ref": "60-apt@2.6.1",
+      "type": "library",
+      "group": "debian",
+      "name": "apt",
+      "version": "2.6.1",
+      "purl": "pkg:deb/debian/apt@2.6.1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "61-attr/libattr1@1:2.5.1-4",
+      "type": "library",
+      "group": "debian",
+      "name": "attr/libattr1",
+      "version": "1:2.5.1-4",
+      "purl": "pkg:deb/debian/libattr1@1%3A2.5.1-4?distro=debian-bookworm&upstream=attr"
+    },
+    {
+      "bom-ref": "62-mawk@1.3.4.20200120-3.1",
+      "type": "library",
+      "group": "debian",
+      "name": "mawk",
+      "version": "1.3.4.20200120-3.1",
+      "purl": "pkg:deb/debian/mawk@1.3.4.20200120-3.1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "63-base-files@12.4+deb12u12",
+      "type": "library",
+      "group": "debian",
+      "name": "base-files",
+      "version": "12.4+deb12u12",
+      "purl": "pkg:deb/debian/base-files@12.4%2Bdeb12u12?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "64-base-files@12.4+deb12u12",
+      "type": "library",
+      "group": "debian",
+      "name": "base-files",
+      "version": "12.4+deb12u12",
+      "purl": "pkg:deb/debian/base-files@12.4%2Bdeb12u12?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "65-cdebconf/libdebconfclient0@0.270",
+      "type": "library",
+      "group": "debian",
+      "name": "cdebconf/libdebconfclient0",
+      "version": "0.270",
+      "purl": "pkg:deb/debian/libdebconfclient0@0.270?distro=debian-bookworm&upstream=cdebconf"
+    },
+    {
+      "bom-ref": "66-base-passwd@3.6.1",
+      "type": "library",
+      "group": "debian",
+      "name": "base-passwd",
+      "version": "3.6.1",
+      "purl": "pkg:deb/debian/base-passwd@3.6.1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "67-debianutils@5.7-0.5~deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "debianutils",
+      "version": "5.7-0.5~deb12u1",
+      "purl": "pkg:deb/debian/debianutils@5.7-0.5~deb12u1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "68-ncurses/libtinfo6@6.4-4",
+      "type": "library",
+      "group": "debian",
+      "name": "ncurses/libtinfo6",
+      "version": "6.4-4",
+      "purl": "pkg:deb/debian/libtinfo6@6.4-4?distro=debian-bookworm&upstream=ncurses"
+    },
+    {
+      "bom-ref": "69-bash/bash@5.2.15-2+b9",
+      "type": "library",
+      "group": "debian",
+      "name": "bash/bash",
+      "version": "5.2.15-2+b9",
+      "purl": "pkg:deb/debian/bash@5.2.15-2%2Bb9?distro=debian-bookworm&upstream=bash%405.2.15-2"
+    },
+    {
+      "bom-ref": "70-coreutils@9.1-1",
+      "type": "library",
+      "group": "debian",
+      "name": "coreutils",
+      "version": "9.1-1",
+      "purl": "pkg:deb/debian/coreutils@9.1-1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "71-libmd/libmd0@1.0.4-2",
+      "type": "library",
+      "group": "debian",
+      "name": "libmd/libmd0",
+      "version": "1.0.4-2",
+      "purl": "pkg:deb/debian/libmd0@1.0.4-2?distro=debian-bookworm&upstream=libmd"
+    },
+    {
+      "bom-ref": "72-tar@1.34+dfsg-1.2+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "tar",
+      "version": "1.34+dfsg-1.2+deb12u1",
+      "purl": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "73-tar@1.34+dfsg-1.2+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "tar",
+      "version": "1.34+dfsg-1.2+deb12u1",
+      "purl": "pkg:deb/debian/tar@1.34%2Bdfsg-1.2%2Bdeb12u1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "74-dpkg@1.21.22",
+      "type": "library",
+      "group": "debian",
+      "name": "dpkg",
+      "version": "1.21.22",
+      "purl": "pkg:deb/debian/dpkg@1.21.22?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "75-dpkg@1.21.22",
+      "type": "library",
+      "group": "debian",
+      "name": "dpkg",
+      "version": "1.21.22",
+      "purl": "pkg:deb/debian/dpkg@1.21.22?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "76-dash@0.5.12-2",
+      "type": "library",
+      "group": "debian",
+      "name": "dash",
+      "version": "0.5.12-2",
+      "purl": "pkg:deb/debian/dash@0.5.12-2?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "77-diffutils@1:3.8-4",
+      "type": "library",
+      "group": "debian",
+      "name": "diffutils",
+      "version": "1:3.8-4",
+      "purl": "pkg:deb/debian/diffutils@1%3A3.8-4?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "78-e2fsprogs/libcom-err2@1.47.0-2+b2",
+      "type": "library",
+      "group": "debian",
+      "name": "e2fsprogs/libcom-err2",
+      "version": "1.47.0-2+b2",
+      "purl": "pkg:deb/debian/libcom-err2@1.47.0-2%2Bb2?distro=debian-bookworm&upstream=e2fsprogs%401.47.0-2"
+    },
+    {
+      "bom-ref": "79-e2fsprogs/libext2fs2@1.47.0-2+b2",
+      "type": "library",
+      "group": "debian",
+      "name": "e2fsprogs/libext2fs2",
+      "version": "1.47.0-2+b2",
+      "purl": "pkg:deb/debian/libext2fs2@1.47.0-2%2Bb2?distro=debian-bookworm&upstream=e2fsprogs%401.47.0-2"
+    },
+    {
+      "bom-ref": "80-e2fsprogs/libss2@1.47.0-2+b2",
+      "type": "library",
+      "group": "debian",
+      "name": "e2fsprogs/libss2",
+      "version": "1.47.0-2+b2",
+      "purl": "pkg:deb/debian/libss2@1.47.0-2%2Bb2?distro=debian-bookworm&upstream=e2fsprogs%401.47.0-2"
+    },
+    {
+      "bom-ref": "81-e2fsprogs/libss2@1.47.0-2+b2",
+      "type": "library",
+      "group": "debian",
+      "name": "e2fsprogs/libss2",
+      "version": "1.47.0-2+b2",
+      "purl": "pkg:deb/debian/libss2@1.47.0-2%2Bb2?distro=debian-bookworm&upstream=e2fsprogs%401.47.0-2"
+    },
+    {
+      "bom-ref": "82-e2fsprogs/logsave@1.47.0-2+b2",
+      "type": "library",
+      "group": "debian",
+      "name": "e2fsprogs/logsave",
+      "version": "1.47.0-2+b2",
+      "purl": "pkg:deb/debian/logsave@1.47.0-2%2Bb2?distro=debian-bookworm&upstream=e2fsprogs%401.47.0-2"
+    },
+    {
+      "bom-ref": "83-util-linux/libblkid1@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/libblkid1",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/libblkid1@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "84-util-linux/libuuid1@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/libuuid1",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/libuuid1@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "85-e2fsprogs/e2fsprogs@1.47.0-2+b2",
+      "type": "library",
+      "group": "debian",
+      "name": "e2fsprogs/e2fsprogs",
+      "version": "1.47.0-2+b2",
+      "purl": "pkg:deb/debian/e2fsprogs@1.47.0-2%2Bb2?distro=debian-bookworm&upstream=e2fsprogs%401.47.0-2"
+    },
+    {
+      "bom-ref": "86-findutils@4.9.0-4",
+      "type": "library",
+      "group": "debian",
+      "name": "findutils",
+      "version": "4.9.0-4",
+      "purl": "pkg:deb/debian/findutils@4.9.0-4?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "87-gcc-12/gcc-12-base@12.2.0-14+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "gcc-12/gcc-12-base",
+      "version": "12.2.0-14+deb12u1",
+      "purl": "pkg:deb/debian/gcc-12-base@12.2.0-14%2Bdeb12u1?distro=bookworm&upstream=gcc-12"
+    },
+    {
+      "bom-ref": "88-gcc-12/libgcc-s1@12.2.0-14+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "gcc-12/libgcc-s1",
+      "version": "12.2.0-14+deb12u1",
+      "purl": "pkg:deb/debian/libgcc-s1@12.2.0-14%2Bdeb12u1?distro=bookworm&upstream=gcc-12"
+    },
+    {
+      "bom-ref": "89-glibc/libc-bin@2.36-9+deb12u13",
+      "type": "library",
+      "group": "debian",
+      "name": "glibc/libc-bin",
+      "version": "2.36-9+deb12u13",
+      "purl": "pkg:deb/debian/libc-bin@2.36-9%2Bdeb12u13?distro=debian-bookworm&upstream=glibc"
+    },
+    {
+      "bom-ref": "90-glibc/libc6@2.36-9+deb12u13",
+      "type": "library",
+      "group": "debian",
+      "name": "glibc/libc6",
+      "version": "2.36-9+deb12u13",
+      "purl": "pkg:deb/debian/libc6@2.36-9%2Bdeb12u13?distro=bookworm&upstream=glibc"
+    },
+    {
+      "bom-ref": "91-grep@3.8-5",
+      "type": "library",
+      "group": "debian",
+      "name": "grep",
+      "version": "3.8-5",
+      "purl": "pkg:deb/debian/grep@3.8-5?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "92-gzip@1.12-1",
+      "type": "library",
+      "group": "debian",
+      "name": "gzip",
+      "version": "1.12-1",
+      "purl": "pkg:deb/debian/gzip@1.12-1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "93-hostname@3.23+nmu1",
+      "type": "library",
+      "group": "debian",
+      "name": "hostname",
+      "version": "3.23+nmu1",
+      "purl": "pkg:deb/debian/hostname@3.23%2Bnmu1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "94-usrmerge/usr-is-merged@37~deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "usrmerge/usr-is-merged",
+      "version": "37~deb12u1",
+      "purl": "pkg:deb/debian/usr-is-merged@37~deb12u1?distro=debian-bookworm&upstream=usrmerge"
+    },
+    {
+      "bom-ref": "95-init-system-helpers@1.65.2+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "init-system-helpers",
+      "version": "1.65.2+deb12u1",
+      "purl": "pkg:deb/debian/init-system-helpers@1.65.2%2Bdeb12u1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "96-ncurses/ncurses-base@6.4-4",
+      "type": "library",
+      "group": "debian",
+      "name": "ncurses/ncurses-base",
+      "version": "6.4-4",
+      "purl": "pkg:deb/debian/ncurses-base@6.4-4?distro=debian-bookworm&upstream=ncurses"
+    },
+    {
+      "bom-ref": "97-ncurses/ncurses-bin@6.4-4",
+      "type": "library",
+      "group": "debian",
+      "name": "ncurses/ncurses-bin",
+      "version": "6.4-4",
+      "purl": "pkg:deb/debian/ncurses-bin@6.4-4?distro=debian-bookworm&upstream=ncurses"
+    },
+    {
+      "bom-ref": "98-openssl/libssl3@3.0.17-1~deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "openssl/libssl3",
+      "version": "3.0.17-1~deb12u3",
+      "purl": "pkg:deb/debian/libssl3@3.0.17-1~deb12u3?distro=debian-bookworm&upstream=openssl"
+    },
+    {
+      "bom-ref": "99-pam/libpam-runtime@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam-runtime",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "100-pam/libpam-runtime@1.5.2-6+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "pam/libpam-runtime",
+      "version": "1.5.2-6+deb12u1",
+      "purl": "pkg:deb/debian/libpam-runtime@1.5.2-6%2Bdeb12u1?distro=debian-bookworm&upstream=pam"
+    },
+    {
+      "bom-ref": "101-perl/perl-base@5.36.0-7+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "perl/perl-base",
+      "version": "5.36.0-7+deb12u3",
+      "purl": "pkg:deb/debian/perl-base@5.36.0-7%2Bdeb12u3?distro=debian-bookworm&upstream=perl"
+    },
+    {
+      "bom-ref": "102-sed@4.9-1",
+      "type": "library",
+      "group": "debian",
+      "name": "sed",
+      "version": "4.9-1",
+      "purl": "pkg:deb/debian/sed@4.9-1?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "103-shadow/login@1:4.13+dfsg1-1+deb12u1",
+      "type": "library",
+      "group": "debian",
+      "name": "shadow/login",
+      "version": "1:4.13+dfsg1-1+deb12u1",
+      "purl": "pkg:deb/debian/login@1%3A4.13%2Bdfsg1-1%2Bdeb12u1?distro=debian-bookworm&upstream=shadow"
+    },
+    {
+      "bom-ref": "104-sysvinit/sysvinit-utils@3.06-4",
+      "type": "library",
+      "group": "debian",
+      "name": "sysvinit/sysvinit-utils",
+      "version": "3.06-4",
+      "purl": "pkg:deb/debian/sysvinit-utils@3.06-4?distro=debian-bookworm&upstream=sysvinit"
+    },
+    {
+      "bom-ref": "105-tzdata@2025b-0+deb12u2",
+      "type": "library",
+      "group": "debian",
+      "name": "tzdata",
+      "version": "2025b-0+deb12u2",
+      "purl": "pkg:deb/debian/tzdata@2025b-0%2Bdeb12u2?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "106-util-linux/libmount1@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/libmount1",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "107-util-linux/libmount1@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/libmount1",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/libmount1@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "108-util-linux/libsmartcols1@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/libsmartcols1",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/libsmartcols1@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "109-util-linux/util-linux-extra@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/util-linux-extra",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "110-util-linux/util-linux-extra@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/util-linux-extra",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/util-linux-extra@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    },
+    {
+      "bom-ref": "111-util-linux@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/util-linux@2.38.1-5%2Bdeb12u3?distro=debian-bookworm"
+    },
+    {
+      "bom-ref": "112-util-linux/bsdutils@1:2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/bsdutils",
+      "version": "1:2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/bsdutils@1%3A2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux%402.38.1-5%2Bdeb12u3"
+    },
+    {
+      "bom-ref": "113-util-linux/mount@2.38.1-5+deb12u3",
+      "type": "library",
+      "group": "debian",
+      "name": "util-linux/mount",
+      "version": "2.38.1-5+deb12u3",
+      "purl": "pkg:deb/debian/mount@2.38.1-5%2Bdeb12u3?distro=debian-bookworm&upstream=util-linux"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "1-redis@latest",
+      "dependsOn": [
+        "1-docker-image|redis@latest"
+      ]
+    },
+    {
+      "ref": "1-docker-image|redis@latest",
+      "dependsOn": [
+        "2-acl/libacl1@2.3.1-3",
+        "26-adduser@3.134",
+        "60-apt@2.6.1",
+        "41-apt/libapt-pkg6.0@2.6.1",
+        "61-attr/libattr1@1:2.5.1-4",
+        "3-audit/libaudit-common@1:3.0.9-1",
+        "6-audit/libaudit1@1:3.0.9-1",
+        "63-base-files@12.4+deb12u12",
+        "66-base-passwd@3.6.1",
+        "69-bash/bash@5.2.15-2+b9",
+        "10-bzip2/libbz2-1.0@1.0.8-5+b1",
+        "65-cdebconf/libdebconfclient0@0.270",
+        "70-coreutils@9.1-1",
+        "76-dash@0.5.12-2",
+        "16-db5.3/libdb5.3@5.3.28+dfsg2-1",
+        "42-debian-archive-keyring@2023.3+deb12u2",
+        "67-debianutils@5.7-0.5~deb12u1",
+        "77-diffutils@1:3.8-4",
+        "75-dpkg@1.21.22",
+        "85-e2fsprogs/e2fsprogs@1.47.0-2+b2",
+        "78-e2fsprogs/libcom-err2@1.47.0-2+b2",
+        "79-e2fsprogs/libext2fs2@1.47.0-2+b2",
+        "81-e2fsprogs/libss2@1.47.0-2+b2",
+        "82-e2fsprogs/logsave@1.47.0-2+b2",
+        "86-findutils@4.9.0-4",
+        "87-gcc-12/gcc-12-base@12.2.0-14+deb12u1",
+        "88-gcc-12/libgcc-s1@12.2.0-14+deb12u1",
+        "28-gcc-12/libstdc++6@12.2.0-14+deb12u1",
+        "89-glibc/libc-bin@2.36-9+deb12u13",
+        "90-glibc/libc6@2.36-9+deb12u13",
+        "46-gmp/libgmp10@2:6.2.1+dfsg1-1.1",
+        "45-gnupg2/gpgv@2.2.40-1.1+deb12u1",
+        "58-gnutls28/libgnutls30@3.7.9-2+deb12u5",
+        "91-grep@3.8-5",
+        "92-gzip@1.12-1",
+        "93-hostname@3.23+nmu1",
+        "95-init-system-helpers@1.65.2+deb12u1",
+        "4-libcap-ng/libcap-ng0@0.8.3-1+b3",
+        "33-libcap2@1:2.66-4+deb12u2",
+        "54-libffi/libffi8@3.4.4-1",
+        "29-libgcrypt20@1.10.1-3",
+        "43-libgpg-error/libgpg-error0@1.46-1",
+        "49-libidn2/libidn2-0@2.3.3-1+b1",
+        "71-libmd/libmd0@1.0.4-2",
+        "59-libseccomp/libseccomp2@2.5.4-1+deb12u1",
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "11-libsemanage/libsemanage-common@3.4-1",
+        "14-libsemanage/libsemanage2@3.4-1+b5",
+        "12-libsepol/libsepol2@3.4-2.1",
+        "50-libtasn1-6@4.19.0-2+deb12u1",
+        "47-libunistring/libunistring2@1.0-2",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2",
+        "31-libzstd/libzstd1@1.5.4+dfsg2-5",
+        "32-lz4/liblz4-1@1.9.4-1",
+        "62-mawk@1.3.4.20200120-3.1",
+        "68-ncurses/libtinfo6@6.4-4",
+        "96-ncurses/ncurses-base@6.4-4",
+        "97-ncurses/ncurses-bin@6.4-4",
+        "53-nettle/libhogweed6@3.8.1-2",
+        "51-nettle/libnettle8@3.8.1-2",
+        "98-openssl/libssl3@3.0.17-1~deb12u3",
+        "56-p11-kit/libp11-kit0@0.24.1-2",
+        "23-pam/libpam-modules@1.5.2-6+deb12u1",
+        "21-pam/libpam-modules-bin@1.5.2-6+deb12u1",
+        "99-pam/libpam-runtime@1.5.2-6+deb12u1",
+        "18-pam/libpam0g@1.5.2-6+deb12u1",
+        "7-pcre2/libpcre2-8-0@10.42-1",
+        "101-perl/perl-base@5.36.0-7+deb12u3",
+        "102-sed@4.9-1",
+        "103-shadow/login@1:4.13+dfsg1-1+deb12u1",
+        "25-shadow/passwd@1:4.13+dfsg1-1+deb12u1",
+        "36-systemd/libsystemd0@252.39-1~deb12u1",
+        "37-systemd/libudev1@252.39-1~deb12u1",
+        "104-sysvinit/sysvinit-utils@3.06-4",
+        "73-tar@1.34+dfsg-1.2+deb12u1",
+        "105-tzdata@2025b-0+deb12u2",
+        "94-usrmerge/usr-is-merged@37~deb12u1",
+        "111-util-linux@2.38.1-5+deb12u3",
+        "112-util-linux/bsdutils@1:2.38.1-5+deb12u3",
+        "83-util-linux/libblkid1@2.38.1-5+deb12u3",
+        "107-util-linux/libmount1@2.38.1-5+deb12u3",
+        "108-util-linux/libsmartcols1@2.38.1-5+deb12u3",
+        "84-util-linux/libuuid1@2.38.1-5+deb12u3",
+        "113-util-linux/mount@2.38.1-5+deb12u3",
+        "110-util-linux/util-linux-extra@2.38.1-5+deb12u3",
+        "38-xxhash/libxxhash0@0.8.1-1",
+        "34-xz-utils/liblzma5@5.4.1-1",
+        "39-zlib/zlib1g@1:1.2.13.dfsg-1"
+      ]
+    },
+    {
+      "ref": "2-acl/libacl1@2.3.1-3"
+    },
+    {
+      "ref": "3-audit/libaudit-common@1:3.0.9-1"
+    },
+    {
+      "ref": "4-libcap-ng/libcap-ng0@0.8.3-1+b3"
+    },
+    {
+      "ref": "5-audit/libaudit1@1:3.0.9-1",
+      "dependsOn": [
+        "3-audit/libaudit-common@1:3.0.9-1",
+        "4-libcap-ng/libcap-ng0@0.8.3-1+b3"
+      ]
+    },
+    {
+      "ref": "6-audit/libaudit1@1:3.0.9-1"
+    },
+    {
+      "ref": "7-pcre2/libpcre2-8-0@10.42-1"
+    },
+    {
+      "ref": "8-libselinux/libselinux1@3.4-1+b6",
+      "dependsOn": [
+        "7-pcre2/libpcre2-8-0@10.42-1"
+      ]
+    },
+    {
+      "ref": "9-libselinux/libselinux1@3.4-1+b6"
+    },
+    {
+      "ref": "10-bzip2/libbz2-1.0@1.0.8-5+b1"
+    },
+    {
+      "ref": "11-libsemanage/libsemanage-common@3.4-1"
+    },
+    {
+      "ref": "12-libsepol/libsepol2@3.4-2.1"
+    },
+    {
+      "ref": "13-libsemanage/libsemanage2@3.4-1+b5",
+      "dependsOn": [
+        "6-audit/libaudit1@1:3.0.9-1",
+        "10-bzip2/libbz2-1.0@1.0.8-5+b1",
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "11-libsemanage/libsemanage-common@3.4-1",
+        "12-libsepol/libsepol2@3.4-2.1"
+      ]
+    },
+    {
+      "ref": "14-libsemanage/libsemanage2@3.4-1+b5"
+    },
+    {
+      "ref": "15-libxcrypt/libcrypt1@1:4.4.33-2"
+    },
+    {
+      "ref": "16-db5.3/libdb5.3@5.3.28+dfsg2-1"
+    },
+    {
+      "ref": "17-debconf@1.5.82"
+    },
+    {
+      "ref": "18-pam/libpam0g@1.5.2-6+deb12u1"
+    },
+    {
+      "ref": "19-pam/libpam0g@1.5.2-6+deb12u1",
+      "dependsOn": [
+        "6-audit/libaudit1@1:3.0.9-1",
+        "17-debconf@1.5.82"
+      ]
+    },
+    {
+      "ref": "20-pam/libpam-modules-bin@1.5.2-6+deb12u1",
+      "dependsOn": [
+        "6-audit/libaudit1@1:3.0.9-1",
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2",
+        "18-pam/libpam0g@1.5.2-6+deb12u1"
+      ]
+    },
+    {
+      "ref": "21-pam/libpam-modules-bin@1.5.2-6+deb12u1"
+    },
+    {
+      "ref": "22-pam/libpam-modules@1.5.2-6+deb12u1",
+      "dependsOn": [
+        "6-audit/libaudit1@1:3.0.9-1",
+        "16-db5.3/libdb5.3@5.3.28+dfsg2-1",
+        "17-debconf@1.5.82",
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2",
+        "20-pam/libpam-modules-bin@1.5.2-6+deb12u1",
+        "18-pam/libpam0g@1.5.2-6+deb12u1"
+      ]
+    },
+    {
+      "ref": "23-pam/libpam-modules@1.5.2-6+deb12u1"
+    },
+    {
+      "ref": "24-shadow/passwd@1:4.13+dfsg1-1+deb12u1",
+      "dependsOn": [
+        "5-audit/libaudit1@1:3.0.9-1",
+        "8-libselinux/libselinux1@3.4-1+b6",
+        "13-libsemanage/libsemanage2@3.4-1+b5",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2",
+        "22-pam/libpam-modules@1.5.2-6+deb12u1",
+        "19-pam/libpam0g@1.5.2-6+deb12u1"
+      ]
+    },
+    {
+      "ref": "25-shadow/passwd@1:4.13+dfsg1-1+deb12u1"
+    },
+    {
+      "ref": "26-adduser@3.134",
+      "dependsOn": [
+        "24-shadow/passwd@1:4.13+dfsg1-1+deb12u1"
+      ]
+    },
+    {
+      "ref": "27-adduser@3.134"
+    },
+    {
+      "ref": "28-gcc-12/libstdc++6@12.2.0-14+deb12u1"
+    },
+    {
+      "ref": "29-libgcrypt20@1.10.1-3"
+    },
+    {
+      "ref": "30-libgcrypt20@1.10.1-3",
+      "dependsOn": [
+        "43-libgpg-error/libgpg-error0@1.46-1"
+      ]
+    },
+    {
+      "ref": "31-libzstd/libzstd1@1.5.4+dfsg2-5"
+    },
+    {
+      "ref": "32-lz4/liblz4-1@1.9.4-1"
+    },
+    {
+      "ref": "33-libcap2@1:2.66-4+deb12u2"
+    },
+    {
+      "ref": "34-xz-utils/liblzma5@5.4.1-1"
+    },
+    {
+      "ref": "35-systemd/libsystemd0@252.39-1~deb12u1",
+      "dependsOn": [
+        "33-libcap2@1:2.66-4+deb12u2",
+        "29-libgcrypt20@1.10.1-3",
+        "31-libzstd/libzstd1@1.5.4+dfsg2-5",
+        "32-lz4/liblz4-1@1.9.4-1",
+        "34-xz-utils/liblzma5@5.4.1-1"
+      ]
+    },
+    {
+      "ref": "36-systemd/libsystemd0@252.39-1~deb12u1"
+    },
+    {
+      "ref": "37-systemd/libudev1@252.39-1~deb12u1"
+    },
+    {
+      "ref": "38-xxhash/libxxhash0@0.8.1-1"
+    },
+    {
+      "ref": "39-zlib/zlib1g@1:1.2.13.dfsg-1"
+    },
+    {
+      "ref": "40-apt/libapt-pkg6.0@2.6.1",
+      "dependsOn": [
+        "10-bzip2/libbz2-1.0@1.0.8-5+b1",
+        "28-gcc-12/libstdc++6@12.2.0-14+deb12u1",
+        "29-libgcrypt20@1.10.1-3",
+        "31-libzstd/libzstd1@1.5.4+dfsg2-5",
+        "32-lz4/liblz4-1@1.9.4-1",
+        "35-systemd/libsystemd0@252.39-1~deb12u1",
+        "37-systemd/libudev1@252.39-1~deb12u1",
+        "38-xxhash/libxxhash0@0.8.1-1",
+        "34-xz-utils/liblzma5@5.4.1-1",
+        "39-zlib/zlib1g@1:1.2.13.dfsg-1"
+      ]
+    },
+    {
+      "ref": "41-apt/libapt-pkg6.0@2.6.1"
+    },
+    {
+      "ref": "42-debian-archive-keyring@2023.3+deb12u2"
+    },
+    {
+      "ref": "43-libgpg-error/libgpg-error0@1.46-1"
+    },
+    {
+      "ref": "44-gnupg2/gpgv@2.2.40-1.1+deb12u1",
+      "dependsOn": [
+        "10-bzip2/libbz2-1.0@1.0.8-5+b1",
+        "30-libgcrypt20@1.10.1-3",
+        "43-libgpg-error/libgpg-error0@1.46-1",
+        "39-zlib/zlib1g@1:1.2.13.dfsg-1"
+      ]
+    },
+    {
+      "ref": "45-gnupg2/gpgv@2.2.40-1.1+deb12u1"
+    },
+    {
+      "ref": "46-gmp/libgmp10@2:6.2.1+dfsg1-1.1"
+    },
+    {
+      "ref": "47-libunistring/libunistring2@1.0-2"
+    },
+    {
+      "ref": "48-libidn2/libidn2-0@2.3.3-1+b1",
+      "dependsOn": [
+        "47-libunistring/libunistring2@1.0-2"
+      ]
+    },
+    {
+      "ref": "49-libidn2/libidn2-0@2.3.3-1+b1"
+    },
+    {
+      "ref": "50-libtasn1-6@4.19.0-2+deb12u1"
+    },
+    {
+      "ref": "51-nettle/libnettle8@3.8.1-2"
+    },
+    {
+      "ref": "52-nettle/libhogweed6@3.8.1-2",
+      "dependsOn": [
+        "46-gmp/libgmp10@2:6.2.1+dfsg1-1.1",
+        "51-nettle/libnettle8@3.8.1-2"
+      ]
+    },
+    {
+      "ref": "53-nettle/libhogweed6@3.8.1-2"
+    },
+    {
+      "ref": "54-libffi/libffi8@3.4.4-1"
+    },
+    {
+      "ref": "55-p11-kit/libp11-kit0@0.24.1-2",
+      "dependsOn": [
+        "54-libffi/libffi8@3.4.4-1"
+      ]
+    },
+    {
+      "ref": "56-p11-kit/libp11-kit0@0.24.1-2"
+    },
+    {
+      "ref": "57-gnutls28/libgnutls30@3.7.9-2+deb12u5",
+      "dependsOn": [
+        "46-gmp/libgmp10@2:6.2.1+dfsg1-1.1",
+        "48-libidn2/libidn2-0@2.3.3-1+b1",
+        "50-libtasn1-6@4.19.0-2+deb12u1",
+        "47-libunistring/libunistring2@1.0-2",
+        "52-nettle/libhogweed6@3.8.1-2",
+        "51-nettle/libnettle8@3.8.1-2",
+        "55-p11-kit/libp11-kit0@0.24.1-2"
+      ]
+    },
+    {
+      "ref": "58-gnutls28/libgnutls30@3.7.9-2+deb12u5"
+    },
+    {
+      "ref": "59-libseccomp/libseccomp2@2.5.4-1+deb12u1"
+    },
+    {
+      "ref": "60-apt@2.6.1",
+      "dependsOn": [
+        "27-adduser@3.134",
+        "40-apt/libapt-pkg6.0@2.6.1",
+        "42-debian-archive-keyring@2023.3+deb12u2",
+        "28-gcc-12/libstdc++6@12.2.0-14+deb12u1",
+        "44-gnupg2/gpgv@2.2.40-1.1+deb12u1",
+        "57-gnutls28/libgnutls30@3.7.9-2+deb12u5",
+        "59-libseccomp/libseccomp2@2.5.4-1+deb12u1",
+        "36-systemd/libsystemd0@252.39-1~deb12u1"
+      ]
+    },
+    {
+      "ref": "61-attr/libattr1@1:2.5.1-4"
+    },
+    {
+      "ref": "62-mawk@1.3.4.20200120-3.1"
+    },
+    {
+      "ref": "63-base-files@12.4+deb12u12",
+      "dependsOn": [
+        "62-mawk@1.3.4.20200120-3.1"
+      ]
+    },
+    {
+      "ref": "64-base-files@12.4+deb12u12"
+    },
+    {
+      "ref": "65-cdebconf/libdebconfclient0@0.270"
+    },
+    {
+      "ref": "66-base-passwd@3.6.1",
+      "dependsOn": [
+        "65-cdebconf/libdebconfclient0@0.270",
+        "9-libselinux/libselinux1@3.4-1+b6"
+      ]
+    },
+    {
+      "ref": "67-debianutils@5.7-0.5~deb12u1"
+    },
+    {
+      "ref": "68-ncurses/libtinfo6@6.4-4"
+    },
+    {
+      "ref": "69-bash/bash@5.2.15-2+b9",
+      "dependsOn": [
+        "64-base-files@12.4+deb12u12",
+        "67-debianutils@5.7-0.5~deb12u1",
+        "68-ncurses/libtinfo6@6.4-4"
+      ]
+    },
+    {
+      "ref": "70-coreutils@9.1-1",
+      "dependsOn": [
+        "2-acl/libacl1@2.3.1-3",
+        "61-attr/libattr1@1:2.5.1-4",
+        "46-gmp/libgmp10@2:6.2.1+dfsg1-1.1",
+        "9-libselinux/libselinux1@3.4-1+b6"
+      ]
+    },
+    {
+      "ref": "71-libmd/libmd0@1.0.4-2"
+    },
+    {
+      "ref": "72-tar@1.34+dfsg-1.2+deb12u1",
+      "dependsOn": [
+        "2-acl/libacl1@2.3.1-3",
+        "9-libselinux/libselinux1@3.4-1+b6"
+      ]
+    },
+    {
+      "ref": "73-tar@1.34+dfsg-1.2+deb12u1"
+    },
+    {
+      "ref": "74-dpkg@1.21.22",
+      "dependsOn": [
+        "10-bzip2/libbz2-1.0@1.0.8-5+b1",
+        "71-libmd/libmd0@1.0.4-2",
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "31-libzstd/libzstd1@1.5.4+dfsg2-5",
+        "72-tar@1.34+dfsg-1.2+deb12u1",
+        "34-xz-utils/liblzma5@5.4.1-1",
+        "39-zlib/zlib1g@1:1.2.13.dfsg-1"
+      ]
+    },
+    {
+      "ref": "75-dpkg@1.21.22"
+    },
+    {
+      "ref": "76-dash@0.5.12-2",
+      "dependsOn": [
+        "67-debianutils@5.7-0.5~deb12u1",
+        "74-dpkg@1.21.22"
+      ]
+    },
+    {
+      "ref": "77-diffutils@1:3.8-4"
+    },
+    {
+      "ref": "78-e2fsprogs/libcom-err2@1.47.0-2+b2"
+    },
+    {
+      "ref": "79-e2fsprogs/libext2fs2@1.47.0-2+b2"
+    },
+    {
+      "ref": "80-e2fsprogs/libss2@1.47.0-2+b2",
+      "dependsOn": [
+        "78-e2fsprogs/libcom-err2@1.47.0-2+b2"
+      ]
+    },
+    {
+      "ref": "81-e2fsprogs/libss2@1.47.0-2+b2"
+    },
+    {
+      "ref": "82-e2fsprogs/logsave@1.47.0-2+b2"
+    },
+    {
+      "ref": "83-util-linux/libblkid1@2.38.1-5+deb12u3"
+    },
+    {
+      "ref": "84-util-linux/libuuid1@2.38.1-5+deb12u3"
+    },
+    {
+      "ref": "85-e2fsprogs/e2fsprogs@1.47.0-2+b2",
+      "dependsOn": [
+        "78-e2fsprogs/libcom-err2@1.47.0-2+b2",
+        "79-e2fsprogs/libext2fs2@1.47.0-2+b2",
+        "80-e2fsprogs/libss2@1.47.0-2+b2",
+        "82-e2fsprogs/logsave@1.47.0-2+b2",
+        "83-util-linux/libblkid1@2.38.1-5+deb12u3",
+        "84-util-linux/libuuid1@2.38.1-5+deb12u3"
+      ]
+    },
+    {
+      "ref": "86-findutils@4.9.0-4",
+      "dependsOn": [
+        "9-libselinux/libselinux1@3.4-1+b6"
+      ]
+    },
+    {
+      "ref": "87-gcc-12/gcc-12-base@12.2.0-14+deb12u1"
+    },
+    {
+      "ref": "88-gcc-12/libgcc-s1@12.2.0-14+deb12u1"
+    },
+    {
+      "ref": "89-glibc/libc-bin@2.36-9+deb12u13"
+    },
+    {
+      "ref": "90-glibc/libc6@2.36-9+deb12u13"
+    },
+    {
+      "ref": "91-grep@3.8-5",
+      "dependsOn": [
+        "75-dpkg@1.21.22",
+        "7-pcre2/libpcre2-8-0@10.42-1"
+      ]
+    },
+    {
+      "ref": "92-gzip@1.12-1",
+      "dependsOn": [
+        "75-dpkg@1.21.22"
+      ]
+    },
+    {
+      "ref": "93-hostname@3.23+nmu1"
+    },
+    {
+      "ref": "94-usrmerge/usr-is-merged@37~deb12u1"
+    },
+    {
+      "ref": "95-init-system-helpers@1.65.2+deb12u1",
+      "dependsOn": [
+        "94-usrmerge/usr-is-merged@37~deb12u1"
+      ]
+    },
+    {
+      "ref": "96-ncurses/ncurses-base@6.4-4"
+    },
+    {
+      "ref": "97-ncurses/ncurses-bin@6.4-4",
+      "dependsOn": [
+        "68-ncurses/libtinfo6@6.4-4"
+      ]
+    },
+    {
+      "ref": "98-openssl/libssl3@3.0.17-1~deb12u3"
+    },
+    {
+      "ref": "99-pam/libpam-runtime@1.5.2-6+deb12u1",
+      "dependsOn": [
+        "17-debconf@1.5.82",
+        "23-pam/libpam-modules@1.5.2-6+deb12u1"
+      ]
+    },
+    {
+      "ref": "100-pam/libpam-runtime@1.5.2-6+deb12u1"
+    },
+    {
+      "ref": "101-perl/perl-base@5.36.0-7+deb12u3",
+      "dependsOn": [
+        "75-dpkg@1.21.22",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2"
+      ]
+    },
+    {
+      "ref": "102-sed@4.9-1",
+      "dependsOn": [
+        "2-acl/libacl1@2.3.1-3",
+        "9-libselinux/libselinux1@3.4-1+b6"
+      ]
+    },
+    {
+      "ref": "103-shadow/login@1:4.13+dfsg1-1+deb12u1",
+      "dependsOn": [
+        "6-audit/libaudit1@1:3.0.9-1",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2",
+        "23-pam/libpam-modules@1.5.2-6+deb12u1",
+        "100-pam/libpam-runtime@1.5.2-6+deb12u1",
+        "18-pam/libpam0g@1.5.2-6+deb12u1"
+      ]
+    },
+    {
+      "ref": "104-sysvinit/sysvinit-utils@3.06-4"
+    },
+    {
+      "ref": "105-tzdata@2025b-0+deb12u2",
+      "dependsOn": [
+        "17-debconf@1.5.82"
+      ]
+    },
+    {
+      "ref": "106-util-linux/libmount1@2.38.1-5+deb12u3"
+    },
+    {
+      "ref": "107-util-linux/libmount1@2.38.1-5+deb12u3",
+      "dependsOn": [
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "83-util-linux/libblkid1@2.38.1-5+deb12u3"
+      ]
+    },
+    {
+      "ref": "108-util-linux/libsmartcols1@2.38.1-5+deb12u3"
+    },
+    {
+      "ref": "109-util-linux/util-linux-extra@2.38.1-5+deb12u3",
+      "dependsOn": [
+        "6-audit/libaudit1@1:3.0.9-1",
+        "108-util-linux/libsmartcols1@2.38.1-5+deb12u3"
+      ]
+    },
+    {
+      "ref": "110-util-linux/util-linux-extra@2.38.1-5+deb12u3"
+    },
+    {
+      "ref": "111-util-linux@2.38.1-5+deb12u3",
+      "dependsOn": [
+        "4-libcap-ng/libcap-ng0@0.8.3-1+b3",
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "15-libxcrypt/libcrypt1@1:4.4.33-2",
+        "68-ncurses/libtinfo6@6.4-4",
+        "18-pam/libpam0g@1.5.2-6+deb12u1",
+        "36-systemd/libsystemd0@252.39-1~deb12u1",
+        "37-systemd/libudev1@252.39-1~deb12u1",
+        "83-util-linux/libblkid1@2.38.1-5+deb12u3",
+        "106-util-linux/libmount1@2.38.1-5+deb12u3",
+        "108-util-linux/libsmartcols1@2.38.1-5+deb12u3",
+        "84-util-linux/libuuid1@2.38.1-5+deb12u3",
+        "109-util-linux/util-linux-extra@2.38.1-5+deb12u3",
+        "39-zlib/zlib1g@1:1.2.13.dfsg-1"
+      ]
+    },
+    {
+      "ref": "112-util-linux/bsdutils@1:2.38.1-5+deb12u3",
+      "dependsOn": [
+        "36-systemd/libsystemd0@252.39-1~deb12u1"
+      ]
+    },
+    {
+      "ref": "113-util-linux/mount@2.38.1-5+deb12u3",
+      "dependsOn": [
+        "9-libselinux/libselinux1@3.4-1+b6",
+        "83-util-linux/libblkid1@2.38.1-5+deb12u3",
+        "106-util-linux/libmount1@2.38.1-5+deb12u3",
+        "108-util-linux/libsmartcols1@2.38.1-5+deb12u3"
+      ]
+    }
+  ]
+}
