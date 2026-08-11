@@ -1,0 +1,73 @@
+pipeline:
+  name: SSCA 7504 SBOM Ingestion TEST
+  identifier: SSCA_7504_SBOM_Ingestion_TEST
+  projectIdentifier: SSCA_Sanity_Automation
+  orgIdentifier: SSCA
+  description: "SSCA-7504 — Ingest CycloneDX 1.7 SBOM for autosscauser/autosscauser-auto:134. Expect scorecard warning on ingestion (Humanshu fix validation)."
+  tags:
+    Automation: ""
+    SSCA-7504: ""
+  properties:
+    ci:
+      codebase:
+        connectorRef: rspm_for_github_via_connector_for_at
+        repoName: PerformanceTesting
+        build:
+          type: branch
+          spec:
+            branch: main
+        sparseCheckout: []
+  stages:
+    - stage:
+        name: Ingest CycloneDX SBOM
+        identifier: Ingest_CycloneDX_SBOM
+        description: "Ingest pre-built CycloneDX 1.7 SBOM against autosscauser/autosscauser-auto:134."
+        type: CI
+        spec:
+          cloneCodebase: true
+          infrastructure:
+            type: KubernetesDirect
+            spec:
+              connectorRef: kubernetes_connector_for_at
+              namespace: ssca-at
+              automountServiceAccountToken: true
+              nodeSelector: {}
+              os: Linux
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Print Ingestion Expectations
+                  identifier: Print_Ingestion_Expectations
+                  spec:
+                    connectorRef: docker_connector_for_at_new
+                    image: alpine:3.19
+                    shell: Sh
+                    command: |
+                      echo "=== SSCA-7504 ingestion validation ==="
+                      echo "SBOM: sboms/ssca-7504/autosscauser-auto-134.cyclonedx.json"
+                      echo "Format: CycloneDX specVersion 1.7"
+                      echo "Target image: autosscauser/autosscauser-auto:134"
+                      echo "Expected: ingestion succeeds with scorecard warning (not missing scorecard)"
+              - step:
+                  type: SscaOrchestration
+                  name: SBOM Ingestion Autosscauser Auto 134
+                  identifier: SBOM_Ingestion_Autosscauser_Auto_134
+                  spec:
+                    mode: ingestion
+                    ingestion:
+                      file: sboms/ssca-7504/autosscauser-auto-134.cyclonedx.json
+                    source:
+                      type: docker
+                      spec:
+                        connector: docker_connector_for_at_new
+                        image: autosscauser/autosscauser-auto:134
+                    resources:
+                      limits:
+                        memory: 500Mi
+                        cpu: "0.5"
+        failureStrategies:
+          - onFailure:
+              errors: [AllErrors]
+              action:
+                type: MarkAsFailure
