@@ -26,11 +26,16 @@ This writes four scenario files plus `scenarios.json` (expected outcomes).
 
 ## Manual verification (post-ingest)
 
-After pipeline run, in Harness QA → SSCA → Artifacts → `redis:7.2-alpine`:
+Each scenario runs in **parallel** with its own Docker image tag (same `redis:7.2-alpine` content):
 
-1. Open the SBOM / component list for the pipeline execution
-2. Search for `alpine-baselayout`, `musl`, `zlib`
-3. Compare stored license vs `scenarios.json` → `expect_after_ingest`
+| Scenario | Artifact image |
+|---|---|
+| LIC-ENR-01 | `autosscauser/redis-lic-enr-01:<pipeline-sequence-id>` |
+| LIC-ENR-02 | `autosscauser/redis-lic-enr-02:<pipeline-sequence-id>` |
+| LIC-ENR-03 | `autosscauser/redis-lic-enr-03:<pipeline-sequence-id>` |
+| LIC-ENR-04 | `autosscauser/redis-lic-enr-04:<pipeline-sequence-id>` |
+
+In Harness QA → SSCA → Artifacts, open each image above and check `alpine-baselayout`, `musl`, `zlib` against `scenarios.json` → `expect_after_ingest`.
 
 ## Push before running Harness pipeline
 
