@@ -1,0 +1,47 @@
+{
+  "target_image": "redis:7.2-alpine",
+  "scenarios": [
+    {
+      "id": "LIC-ENR-01",
+      "file": "lic-enr-01-noassertion.spdx.json",
+      "target": "redis:7.2-alpine",
+      "mutation": "Set alpine-baselayout, musl, zlib to NOASSERTION",
+      "expect_after_ingest": {
+        "alpine-baselayout": "GPL-2.0-only",
+        "musl": "MIT",
+        "zlib": "Zlib"
+      }
+    },
+    {
+      "id": "LIC-ENR-02",
+      "file": "lic-enr-02-wrong-mit.spdx.json",
+      "target": "redis:7.2-alpine",
+      "mutation": "Set alpine-baselayout (GPL) to MIT",
+      "expect_after_ingest": {
+        "alpine-baselayout": "GPL-2.0-only"
+      }
+    },
+    {
+      "id": "LIC-ENR-03",
+      "file": "lic-enr-03-mixed.spdx.json",
+      "target": "redis:7.2-alpine",
+      "mutation": "alpine-baselayout=NOASSERTION, musl=Apache-2.0, zlib unchanged",
+      "expect_after_ingest": {
+        "alpine-baselayout": "GPL-2.0-only",
+        "musl": "MIT",
+        "zlib": "Zlib"
+      }
+    },
+    {
+      "id": "LIC-ENR-04",
+      "file": "lic-enr-04-baseline.spdx.json",
+      "target": "redis:7.2-alpine",
+      "mutation": "None (real Syft SBOM)",
+      "expect_after_ingest": {
+        "alpine-baselayout": "GPL-2.0-only",
+        "musl": "MIT",
+        "zlib": "Zlib"
+      }
+    }
+  ]
+}
