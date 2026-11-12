@@ -1,0 +1,39 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "le-04-or-deny",
+  "documentNamespace": "http://harness.io/spdx/license-expression/le-04-or-deny",
+  "creationInfo": {
+    "created": "2026-11-12T00:00:00Z",
+    "creators": [
+      "Tool: harness-scs-qe-license-expression"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-component",
+      "name": "le-04-or-deny",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only OR LGPL-3.0-only",
+      "licenseDeclared": "GPL-2.0-only OR LGPL-3.0-only",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/le-expr-or-deny@1.0.0"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-component"
+    }
+  ]
+}

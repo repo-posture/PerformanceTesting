@@ -1,0 +1,39 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "le-09-with-exact",
+  "documentNamespace": "http://harness.io/spdx/license-expression/le-09-with-exact",
+  "creationInfo": {
+    "created": "2026-11-12T00:00:00Z",
+    "creators": [
+      "Tool: harness-scs-qe-license-expression"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-component",
+      "name": "le-09-with-exact",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-2.0-only WITH Classpath-exception-2.0",
+      "licenseDeclared": "GPL-2.0-only WITH Classpath-exception-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/le-expr-with@1.0.0"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-component"
+    }
+  ]
+}
