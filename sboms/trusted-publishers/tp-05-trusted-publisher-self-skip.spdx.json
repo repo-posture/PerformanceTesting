@@ -1,0 +1,63 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "tp-05-trusted-publisher-self-skip",
+  "documentNamespace": "http://harness.io/spdx/trusted-publishers/tp-05-trusted-publisher-self-skip",
+  "creationInfo": {
+    "created": "2026-11-16T00:00:00Z",
+    "creators": [
+      "Tool: harness-scs-qe-trusted-publishers"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-root",
+      "name": "tp-root-self",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/tp-root-self@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Regions Test"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aws-gpl",
+      "name": "aws-gpl-package",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/aws-gpl-package@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Amazon Web Services"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-root"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-root",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aws-gpl"
+    }
+  ]
+}
