@@ -1,0 +1,73 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:tp-tp-03-purl-fallback-skip",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-16T00:00:00Z",
+    "tools": [
+      {
+        "vendor": "Harness SCS QE",
+        "name": "trusted-publishers-fixtures",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:generic/tp-meta@1.0.0",
+      "name": "tp-03-purl-fallback-skip",
+      "version": "1.0.0"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/tp-root-purl@1.0.0",
+      "name": "tp-root-purl",
+      "version": "1.0.0",
+      "purl": "pkg:generic/tp-root-purl@1.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Regions Test"
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/@aws-sdk/client-s3@3.0.0",
+      "name": "client-s3",
+      "version": "3.0.0",
+      "purl": "pkg:npm/@aws-sdk/client-s3@3.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-only"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:generic/tp-meta@1.0.0",
+      "dependsOn": [
+        "pkg:generic/tp-root-purl@1.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:generic/tp-root-purl@1.0.0",
+      "dependsOn": [
+        "pkg:npm/@aws-sdk/client-s3@3.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:npm/@aws-sdk/client-s3@3.0.0",
+      "dependsOn": []
+    }
+  ]
+}
