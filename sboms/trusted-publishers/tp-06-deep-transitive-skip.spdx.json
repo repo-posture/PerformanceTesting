@@ -1,0 +1,109 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "tp-06-deep-transitive-skip",
+  "documentNamespace": "http://harness.io/spdx/trusted-publishers/tp-06-deep-transitive-skip",
+  "creationInfo": {
+    "created": "2026-11-16T00:00:00Z",
+    "creators": [
+      "Tool: harness-scs-qe-trusted-publishers"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-root",
+      "name": "tp-root-deep",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/tp-root-deep@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Regions Test"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-l1",
+      "name": "aws-sdk-core",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/aws-sdk-core@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Amazon"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-l2",
+      "name": "aws-middleware",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/aws-middleware@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Other"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-l3",
+      "name": "deep-copyleft",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/deep-copyleft@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Other"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-root"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-root",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-l1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-l1",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-l2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-l2",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-l3"
+    }
+  ]
+}
