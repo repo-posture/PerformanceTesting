@@ -1,0 +1,86 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "tp-01-trusted-transitive-skip",
+  "documentNamespace": "http://harness.io/spdx/trusted-publishers/tp-01-trusted-transitive-skip",
+  "creationInfo": {
+    "created": "2026-11-16T00:00:00Z",
+    "creators": [
+      "Tool: harness-scs-qe-trusted-publishers"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-root",
+      "name": "tp-root-app",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:generic/tp-root-app@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Regions Test"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-aws-sdk",
+      "name": "aws-sdk-sagemaker",
+      "versionInfo": "2.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/aws-sdk-sagemaker@2.0.0"
+        }
+      ],
+      "supplier": "Organization: Amazon"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-autocomplete",
+      "name": "autocomplete",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "GPL-3.0-only",
+      "licenseDeclared": "GPL-3.0-only",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:npm/autocomplete@1.0.0"
+        }
+      ],
+      "supplier": "Organization: Other"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-root"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-root",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-aws-sdk"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-aws-sdk",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-autocomplete"
+    }
+  ]
+}
